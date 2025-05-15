@@ -1,10 +1,10 @@
 ---
 ---
 
-# Lab Website Template
+<!--# Lab Website Template
 
 [Lab Website Template](https://github.com/greenelab/lab-website-template) is an easy-to-use, flexible website template for [labs](https://www.greenelab.com/).
-Spend less time worrying about managing a website and citations, and more time running your lab..
+Spend less time worrying about managing a website and citations, and more time running your lab.
 
 {%
   include button.html
@@ -19,17 +19,18 @@ Spend less time worrying about managing a website and citations, and more time r
 %}
 
 {% include section.html %}
+-->
 
-## Highlights
+## WHO WE ARE
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+LARGE-SCALE EXPERIMENTAL TESTING, NUMERICAL ANALYSIS, STRUCTURAL HEALTH MONITORING, DECISION-MAKING
 
 {%
   include button.html
   link="research"
-  text="See our publications"
+  text="DETAILS"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -39,12 +40,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/Research.jpg"
   link="research"
-  title="Our Research"
+  title="RESEARCH FOCUS"
   text=text
 %}
 
+<!--
 {% capture text %}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -69,6 +71,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   style="bare"
   text=text
 %}
+-->
 
 {% capture text %}
 
@@ -77,7 +80,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 {%
   include button.html
   link="team"
-  text="Meet our team"
+  text="MEET OUR TEAM"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -89,6 +92,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   include feature.html
   image="images/photo.jpg"
   link="team"
-  title="Our Team"
+  title="TEAM MEMBERS"
   text=text
 %}
