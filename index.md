@@ -41,7 +41,7 @@ title: Home
     We have diligent, passionate, motivate, and thoughtful team members who are making the world better!
   </p>
 
-  <div style="margin-top: 1rem;">
+  <div style="margin-top: 1rem; text-align: right;">
     {%
       include button.html
       link="team"
