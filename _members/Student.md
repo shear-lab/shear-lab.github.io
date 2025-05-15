@@ -3,10 +3,7 @@ name: Dr. Sangwook Park
 image: images/sp.jpg
 role: principal-investigator
 affiliation: University
-<!-- aliases:
-  - S. Park
-  - S Park
--->
+
 links:
   google-scholar: iuUI0MQAAAAJ
   orcid: 0009-0008-5191-1732
