@@ -18,7 +18,14 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 {% include section.html %}
 
-## All
+## IN PROGRESS
+{% for cite in site.data.inprogress %}
+
+  {% include citation.html cite=cite style="rich" %}
+
+{% endfor %}
+
+## All PUBLICATIONS
 
 {% include search-box.html %}
 
