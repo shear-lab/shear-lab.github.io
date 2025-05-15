@@ -6,21 +6,25 @@ title: Home
 ## WHO WE ARE
 
 {% capture text %}
-<ul class="custom-list">
-  <li>LARGE-SCALE EXPERIMENTAL TESTING</li>
-  <li>NUMERICAL ANALYSIS</li>
-  <li>STRUCTURAL HEALTH MONITORING</li>
-  <li>DECISION-MAKING</li>
-</ul>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+  <ul class="custom-list" style="margin: 0;">
+    <li>LARGE-SCALE EXPERIMENTAL TESTING</li>
+    <li>NUMERICAL ANALYSIS</li>
+    <li>STRUCTURAL HEALTH MONITORING</li>
+    <li>DECISION-MAKING</li>
+  </ul>
 
-{%
-  include button.html
-  link="research"
-  text="DETAILS"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
+  <div>
+    {%
+      include button.html
+      link="research"
+      text="DETAILS"
+      icon="fa-solid fa-arrow-right"
+      flip=true
+      style="bare"
+    %}
+  </div>
+</div>
 {% endcapture %}
 
 {%
