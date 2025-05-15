@@ -1,10 +1,10 @@
 ---
-name: John Doe
+name: oo oo
 image: images/photo.jpg
-role: phd
-group: alum
+role: PhD/MS/BS course
+group: Student
 links:
-  github: john-doe
+  google-scholar: 
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
