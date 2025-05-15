@@ -2,6 +2,7 @@
 title: SHEAR Lab
 subtitle: Structures, Hazards, Evaluation, & Resilience
 description: Aiming to develop highly-advanced technologies to enhance structural reseilience under extreme hazards.
+baseurl: "/WEB"
 header: images/background_steel.jpg
 footer: images/footer.jpg
 proofer: false
