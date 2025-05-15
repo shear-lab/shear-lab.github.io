@@ -6,7 +6,7 @@ title: Home
 ## WHO WE ARE
 
 {% capture text %}
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+<div style="margin-top: 1rem; text-align: right;">
   <ul class="custom-list" style="margin: 0;">
     <li>LARGE-SCALE EXPERIMENTAL TESTING</li>
     <li>NUMERICAL ANALYSIS</li>
@@ -36,18 +36,22 @@ title: Home
 %}
 
 {% capture text %}
+<div>
+  <p>
+    We have diligent, passionate, motivate, and thoughtful team members who are making the world better!
+  </p>
 
-We have diligent, passionate, motivate, and thoughtful team members who are making the world better! 
-
-{%
-  include button.html
-  link="team"
-  text="MEET OUR TEAM"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
+  <div style="margin-top: 1rem;">
+    {%
+      include button.html
+      link="team"
+      text="MEET OUR TEAM"
+      icon="fa-solid fa-arrow-right"
+      flip=true
+      style="bare"
+    %}
+  </div>
+</div>
 {% endcapture %}
 
 {%
