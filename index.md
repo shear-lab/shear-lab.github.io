@@ -6,11 +6,12 @@ title: Home
 ## WHO WE ARE
 
 {% capture text %}
-
-- LARGE-SCALE EXPERIMENTAL TESTING
-- NUMERICAL ANALYSIS
-- STRUCTURAL HEALTH MONITORING
-- DECISION-MAKING
+<ul class="custom-list">
+  <li>LARGE-SCALE EXPERIMENTAL TESTING</li>
+  <li>NUMERICAL ANALYSIS</li>
+  <li>STRUCTURAL HEALTH MONITORING</li>
+  <li>DECISION-MAKING</li>
+</ul>
 
 {%
   include button.html
@@ -20,7 +21,6 @@ title: Home
   flip=true
   style="bare"
 %}
-
 {% endcapture %}
 
 {%
