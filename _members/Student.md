@@ -1,7 +1,7 @@
 ---
 name: Dr. Sangwook Park
 image: images/sp.jpg
-role: principal-investigator
+role: PI
 affiliation: University
 
 links:
