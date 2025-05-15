@@ -23,7 +23,7 @@ If you think you are a motivated and passionate person (or want to check it out)
   include button.html
   type="address"
   tooltip="Our location on Google Maps for easy navigation"
-  <!--link="https://www.google.com/maps" -->
+  link="https://www.google.com/maps"
 %}
 
 {% include section.html %}
