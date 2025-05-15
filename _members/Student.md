@@ -1,14 +1,15 @@
 ---
-name: Jane Smith
-image: images/photo.jpg
+name: Dr. Sangwook Park
+image: images/sp.jpg
 role: principal-investigator
-affiliation: University of Colorado
-aliases:
-  - J. Smith
-  - J Smith
+affiliation: University
+<!-- aliases:
+  - S. Park
+  - S Park
+-->
 links:
-  home-page: https://janesmith.com
-  orcid: 0000-0001-8713-9213
+  google-scholar: iuUI0MQAAAAJ
+  orcid: 0009-0008-5191-1732
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
