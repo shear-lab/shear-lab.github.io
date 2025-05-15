@@ -40,23 +40,19 @@
         {{ citation.title | default: "[no title info]" }}
       </a>
 
-      <div
-        class="citation-authors"
-        {% if citation.authors.size > 10 %}
-          data-tooltip="{{ citation.authors | join: ", " | xml_escape }}"
-        {% endif %}
-        tabindex="0"
-      >
-        {{
-          citation.authors
-          | join: ","
-          | split: ","
-          | array_carve: 5
-          | join: ", "
-          | markdownify
-          | remove: "<p>" | remove: "</p>"
-          | default: "[no author info]"
-        }}
+      <div class="citation-authors" tabindex="0">
+        {% assign my_family = "Park" %}
+        {% assign my_given = "Sangwook" %}
+
+        {% for author in citation.author %}
+          {% assign full_name = author.given | append: " " | append: author.family %}
+          {% if author.family == my_family and author.given == my_given %}
+            <strong>{{ full_name }}</strong>
+          {% else %}
+            {{ full_name }}
+          {% endif %}
+          {% unless forloop.last %}, {% endunless %}
+        {% endfor %}
       </div>
 
       <div class="citation-details">
