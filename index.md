@@ -25,7 +25,10 @@ Spend less time worrying about managing a website and citations, and more time r
 
 {% capture text %}
 
-LARGE-SCALE EXPERIMENTAL TESTING, NUMERICAL ANALYSIS, STRUCTURAL HEALTH MONITORING, DECISION-MAKING
+LARGE-SCALE EXPERIMENTAL TESTING
+NUMERICAL ANALYSIS
+STRUCTURAL HEALTH MONITORING
+DECISION-MAKING
 
 {%
   include button.html
@@ -75,7 +78,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+We have diligent, passionate, motivate, and thoughtful team members who are making the world better! 
 
 {%
   include button.html
