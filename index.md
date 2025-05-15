@@ -2,26 +2,6 @@
 layout: default
 title: Home
 ---
-<!--
-# Lab Website Template
-
-[Lab Website Template](https://github.com/greenelab/lab-website-template) is an easy-to-use, flexible website template for [labs](https://www.greenelab.com/).
-Spend less time worrying about managing a website and citations, and more time running your lab.
-
-{%
-  include button.html
-  type="docs"
-  link="https://greene-lab.gitbook.io/lab-website-template-docs"
-%}
-{%
-  include button.html
-  type="github"
-  text="On GitHub"
-  link="greenelab/lab-website-template"
-%}
-
-{% include section.html %}
--->
 
 ## WHO WE ARE
 
@@ -47,33 +27,6 @@ LARGE-SCALE EXPERIMENTAL TESTING, NUMERICAL ANALYSIS, STRUCTURAL HEALTH MONITORI
   title="RESEARCH FOCUS"
   text=text
 %}
-
-<!--
-{% capture text %}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-{%
-  include button.html
-  link="projects"
-  text="Browse our projects"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/photo.jpg"
-  link="projects"
-  title="Our Projects"
-  flip=true
-  style="bare"
-  text=text
-%}
--->
 
 {% capture text %}
 
