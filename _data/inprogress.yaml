@@ -7,6 +7,8 @@
     - P. Clayton
   note: "In revision"
   type: manuscript
+  publisher: ""
+  date: ""
 - id: 2
   title: "Effects of column design variations on seismic performance of steel moment-resisting frames with fuse connections"
   authors:
@@ -17,6 +19,8 @@
     - S. Acevedo
   note: "In revision"
   type: manuscript
+  publisher: ""
+  date: ""
 - id: 3
   title: "Experimental and numerical analyses of the behavior of single shear connections combining pretensioned high-strength bolts and fillet welds"
   authors:
@@ -27,6 +31,8 @@
     - B. Russel
   note: "Under review"
   type: manuscript
+  publisher: ""
+  date: ""
 - id: 4
   title: "Damage detection in structural members: A comparative analysis of machine learning algorithms"
   authors:
@@ -35,3 +41,5 @@
     - M. Soliman
   note: "Under review"
   type: manuscript
+  publisher: ""
+  date: ""
