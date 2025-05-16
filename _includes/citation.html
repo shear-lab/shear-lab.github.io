@@ -43,6 +43,7 @@
       <div class="citation-authors" tabindex="0">
         {% assign my_family = "Park" %}
         {% assign my_given = "Sangwook" %}
+        {% assign bold_name = "Sangwook Park" %}
 
         {% if citation.author and citation.author.size > 0 %}
           {% for author in citation.author %}
@@ -55,7 +56,14 @@
             {% unless forloop.last %}, {% endunless %}
           {% endfor %}
         {% elsif citation.authors and citation.authors.size > 0 %}
-          {{ citation.authors | join: ", " }}
+          {% for author_name in citation.authors %}
+            {% if author_name == bold_name %}
+              <strong>{{ author_name }}</strong>
+            {% else %}
+              {{ author_name }}
+            {% endif %}
+            {% unless forloop.last %}, {% endunless %}
+          {% endfor %}
         {% else %}
           [no author info]
         {% endif %}
