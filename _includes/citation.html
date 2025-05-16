@@ -2,8 +2,9 @@
   {% assign citation = site.data.citations
     | where_exp: "citation",
       "citation.id == include.lookup or citation.title contains include.lookup"
-    | first
-  %}
+    | first %}
+{% elsif include.cite %}
+  {% assign citation = include.cite %}
 {% else %}
   {% assign citation = include %}
 {% endif %}
