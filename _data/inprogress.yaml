@@ -1,12 +1,14 @@
 # manually inserted
 
-- title: "Effect of bolted double-angle gravity connections with floor systems on building seismic performance"
+- id: #1
+  title: "Effect of bolted double-angle gravity connections with floor systems on building seismic performance"
   authors:
     - Sangwook Park
     - P. Clayton
   note: "In revision"
   type: manuscript
-- title: "Effects of column design variations on seismic performance of steel moment-resisting frames with fuse connections"
+- id: #2
+  title: "Effects of column design variations on seismic performance of steel moment-resisting frames with fuse connections"
   authors:
     - Sangwook Park
     - J. Gilroy
@@ -15,7 +17,8 @@
     - S. Acevedo
   note: "In revision"
   type: manuscript
-- title: "Experimental and numerical analyses of the behavior of single shear connections combining pretensioned high-strength bolts and fillet welds"
+- id: #3
+  title: "Experimental and numerical analyses of the behavior of single shear connections combining pretensioned high-strength bolts and fillet welds"
   authors:
     - Sangwook Park
     - A. Idris
@@ -24,7 +27,8 @@
     - B. Russel
   note: "Under review"
   type: manuscript
-- title: "Damage detection in structural members: A comparative analysis of machine learning algorithms"
+- id: #4
+  title: "Damage detection in structural members: A comparative analysis of machine learning algorithms"
   author:
     - A. Nayak
     - Sangwook Park
