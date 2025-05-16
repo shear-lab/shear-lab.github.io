@@ -36,3 +36,13 @@
       given: B.
   note: "Under review"
   type: manuscript
+- title: "Damage detection in structural members: A comparative analysis of machine learning algorithms"
+  author:
+    - family: Nayak
+      given: A.
+    - family: Park
+      given: Sangwook
+    - family: Soliman
+      given: M.
+  note: "Under review"
+  type: manuscript
