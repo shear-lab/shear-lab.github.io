@@ -29,7 +29,7 @@
   type: manuscript
 - id: #4
   title: "Damage detection in structural members: A comparative analysis of machine learning algorithms"
-  author:
+  authors:
     - A. Nayak
     - Sangwook Park
     - M. Soliman
