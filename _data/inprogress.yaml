@@ -1,48 +1,33 @@
 # manually inserted
 
 - title: "Effect of bolted double-angle gravity connections with floor systems on building seismic performance"
-  author:
-    - family: Park
-      given: Sangwook
-    - family: Clayton
-      given: P.
+  authors:
+    - Sangwook Park
+    - P. Clayton
   note: "In revision"
   type: manuscript
 - title: "Effects of column design variations on seismic performance of steel moment-resisting frames with fuse connections"
-  author:
-    - family: Park
-      given: Sangwook
-    - family: Gilroy
-      given: J.
-    - family: Clayton
-      given: P.
-    - family: Dundore
-      given: A.
-    - family: Acevedo
-      given: S.
+  authors:
+    - Sangwook Park
+    - J. Gilroy
+    - P. Clayton
+    - A. Dundore
+    - S. Acevedo
   note: "In revision"
   type: manuscript
 - title: "Experimental and numerical analyses of the behavior of single shear connections combining pretensioned high-strength bolts and fillet welds"
-  author:
-    - family: Park
-      given: Sangwook
-    - family: Idris
-      given: A.
-    - family: Soliman
-      given: M.
-    - family: Bennet
-      given: C.
-    - family: Russel
-      given: B.
+  authors:
+    - Sangwook Park
+    - A. Idris
+    - M. Soliman
+    - C. Bennet
+    - B. Russel
   note: "Under review"
   type: manuscript
 - title: "Damage detection in structural members: A comparative analysis of machine learning algorithms"
   author:
-    - family: Nayak
-      given: A.
-    - family: Park
-      given: Sangwook
-    - family: Soliman
-      given: M.
+    - A. Nayak
+    - Sangwook Park
+    - M. Soliman
   note: "Under review"
   type: manuscript
