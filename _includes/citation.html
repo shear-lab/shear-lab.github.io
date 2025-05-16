@@ -44,11 +44,13 @@
         {% assign my_family = "Park" %}
         {% assign my_given = "Sangwook" %}
         {% assign bold_names = "Sangwook Park,Sang Wook Park" | split: "," %}
-
+      
         {% if citation.author and citation.author.size > 0 %}
           {% for author in citation.author %}
             {% assign full_name = author.given | append: " " | append: author.family %}
             {% if author.family == my_family and author.given == my_given %}
+              <strong>{{ full_name }}</strong>
+            {% elsif bold_names contains full_name %}
               <strong>{{ full_name }}</strong>
             {% else %}
               {{ full_name }}
@@ -57,7 +59,7 @@
           {% endfor %}
         {% elsif citation.authors and citation.authors.size > 0 %}
           {% for author_name in citation.authors %}
-            {% if author_name == bold_name %}
+            {% if bold_names contains author_name %}
               <strong>{{ author_name }}</strong>
             {% else %}
               {{ author_name }}
