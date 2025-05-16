@@ -73,17 +73,27 @@
       </div>
 
       <div class="citation-details">
-        <span class="citation-publisher">
-          {{- citation.publisher | default: "[no publisher info]" -}}
-        </span>
-        &nbsp;·&nbsp;
-        <span class="citation-date">
-          {{- citation.date | default: "[no date info]" | date: "%d %b %Y" -}}
-        </span>
-        &nbsp;·&nbsp;
-        <span class="citation-id">
-          {{- citation.id | default: "[no id info]" -}}
-        </span>
+        {% assign details = "" %}
+        
+        {% if citation.publisher %}
+          {% assign details = details | append: citation.publisher %}
+        {% endif %}
+      
+        {% if citation.date %}
+          {% if details != "" %}
+            {% assign details = details | append: " · " %}
+          {% endif %}
+          {% assign details = details | append: citation.date | date: "%d %b %Y" %}
+        {% endif %}
+      
+        {% if citation.id %}
+          {% if details != "" %}
+            {% assign details = details | append: " · " %}
+          {% endif %}
+          {% assign details = details | append: citation.id %}
+        {% endif %}
+      
+        {{ details }}
       </div>
 
       {% if include.style == "rich" %}
