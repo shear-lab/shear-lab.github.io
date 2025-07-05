@@ -18,17 +18,14 @@ nav:
 
 {% include section.html background="images/background.jpg" dark=true %}
 
-We aim to contribute to a safer, more resilient world through research and innovation in exterme hazard mitigation
+<!-- {% include section.html %} -->
 
+<!-- {% capture content %} -->
 
-{% include section.html %}
+<!-- {% include figure.html image="images/photo.jpg" %} -->
+<!-- {% include figure.html image="images/photo.jpg" %} -->
+<!-- {% include figure.html image="images/photo.jpg" %} -->
 
-{% capture content %}
+<!-- {% endcapture %} -->
 
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-
-{% endcapture %}
-
-{% include grid.html style="square" content=content %}
+<!-- {% include grid.html style="square" content=content %} -->
