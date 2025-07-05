@@ -7,9 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-users" %}Team
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+We aim to contribute to a safer, more resilient world through research and innovation in extreme hazard mitigation
 
 {% include section.html %}
 
