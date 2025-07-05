@@ -1,8 +1,7 @@
 ---
-title: Example post 3
+title: Dr. Sangwook Park joined Chaung-Ang University
 image: images/photo.jpg
-author: john-doe
-tags: biology, medicine
+author: SP
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Dr. Sangwook Park began his academic career as an Assistant Professor at Chung-Ang University
