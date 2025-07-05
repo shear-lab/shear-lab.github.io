@@ -9,10 +9,9 @@ links:
   orcid: 0009-0008-5191-1732
 ---
 
-<div align="left">
-## Education
-- **BS** – Architectural Engineering, Yonsei University (2008–2014)  
-- **MS** – Architectural Engineering, Yonsei University (2014–2016)  
-- **PhD** – Civil Engineering, The University of Texas at Austin (2018–2023)  
-
-</div>
+<h2 style="text-align: left;">Education</h2>
+<ul style="text-align: left;">
+  <li><strong>BS</strong> – Architectural Engineering, Yonsei University (2008–2014)</li>
+  <li><strong>MS</strong> – Architectural Engineering, Yonsei University (2014–2016)</li>
+  <li><strong>PhD</strong> – Civil Engineering, The University of Texas at Austin (2018–2023)</li>
+</ul>
