@@ -1,5 +1,5 @@
 ---
-name: Dr. Sangwook Park
+name: Sangwook Park
 image: images/sp.jpg
 role: Assistant Professor
 <!-- affiliation: Chung-Ang University -->
