@@ -29,7 +29,7 @@ title: Home
 
 {%
   include feature.html
-  image="images/Research keyword.png"
+  image="images/Keywords.png"
   link="research"
   title="RESEARCH FOCUS"
   text=text
