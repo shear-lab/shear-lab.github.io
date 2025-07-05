@@ -1,10 +1,13 @@
 {% assign image = page.header | default: site.header %}
 {% assign dark = page.header-dark | is_nil: site.header-dark | is_nil: true %}
 
-{% assign svg = "images/logo.svg" | file_exists %}
-{% assign png = "images/logo.png" | file_exists %}
-{% assign jpg = "images/logo.jpg" | file_exists %}
-{% assign logo = "images/icon.svg" %}
+{% if page.url == "/" %}
+  {% assign logo = "images/logo.svg" %}
+  {% assign is_svg = true %}
+{% else %}
+  {% assign logo = "images/icon.svg" %}
+  {% assign is_svg = false %}
+{% endif %}
 
 <header
   class="background"
@@ -19,7 +22,11 @@
   <a href="{{ "/" | relative_url }}" class="home">
     {% if logo %}
       <span class="logo">
-        <img src="{{ logo | relative_url | uri_escape }}" alt="logo" style="height: 60px;">
+        {% if is_svg %}
+          {{ logo | file_read }}
+        {% else %}
+          <img src="{{ logo | relative_url | uri_escape }}" alt="logo" style="height: 60px;">
+        {% endif %}
       </span>
     {% endif %}
     {% if site.logo-text != false %}
