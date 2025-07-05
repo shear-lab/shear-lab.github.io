@@ -11,15 +11,13 @@
 
 <div class="citation-container">
   <div class="citation">
-    {% if include.style == "rich" %}
+    {% if include.style == "rich" and citation.icon %}
       <a
-        {% if citation.link %}
-          href="{{ citation.link | relative_url | uri_escape }}"
-        {% endif %}
+        href="{{ citation.link | default: '#' | relative_url | uri_escape }}"
         class="citation-image"
         aria-label="{{ citation.title | default: "citation link" | regex_strip }}"
       >
-
+        <img src="{{ citation.icon | relative_url }}" alt="Citation image" />
       </a>
     {% endif %}
 
