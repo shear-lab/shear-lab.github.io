@@ -5,7 +5,7 @@ nav:
   tooltip: Software, datasets, and more
 ---
 
-# {% include icon.html icon="fa-solid fa-wrench" %}Projects
+<h1>{% include icon.html icon="fa-solid fa-wrench" %}Projects<h1>
 
 <!-- {% include search-info.html %} -->
 
