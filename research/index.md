@@ -7,10 +7,6 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
 
-Check out the latest peer-reviewed papers!
-
-{% include section.html %}
-
 ## Highlighted
 
 {% include citation.html lookup="Voxel-based structural monitoring model for building structures using terrestrial laser scanning" style="rich" %}
