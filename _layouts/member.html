@@ -20,6 +20,12 @@ layout: default
 
 {{ content }}
 
+{% if page.role %}
+  <p class="center" style="margin-top: -0.5rem; font-size: 1.05rem; color: #555;">
+    {{ page.role }}
+  </p>
+{% endif %}
+
 {% assign aliases = page.aliases
   | default: page.name
   | default: page.title
