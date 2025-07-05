@@ -42,9 +42,9 @@
       </span>
     {% endif %}
 
-    {% if member.description or type %}
+    {% if member.description %}
       <span class="portrait-description">
-        {{ member.description | default: type.description }}
+        {{ member.description }}
       </span>
     {% endif %}
 
