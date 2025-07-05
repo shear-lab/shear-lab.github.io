@@ -23,7 +23,7 @@ Check out the latest peer-reviewed papers!
 #<div style="display: flex; align-items: center; margin-bottom: 2rem;">
   #<img src="{{ '/images/Elsevier.png' | relative_url }}" alt="Elsevier Logo" style="width: 60px; margin-right: 1rem;" />
   #<div style="flex: 1;">
-  #  {% include citation.html cite=cite style="rich" %}
+{% include citation.html cite=cite style="rich" %}
   #</div>
 #</div>
 
