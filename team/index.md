@@ -7,7 +7,9 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-users" %}Team
 
-We aim to contribute to a safer, more resilient world through research and innovation in extreme hazard mitigation
+<div style="text-align: center;">
+  We aim to contribute to a safer, more resilient world through research and innovation in extreme hazard mitigation
+</div>
 
 {% include section.html %}
 
