@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-## WHO WE ARE
+## INSIDE THE LAB
 
 {% capture text %}
 <div style="margin-top: 1rem; text-align: right;">
@@ -38,7 +38,7 @@ title: Home
 {% capture text %}
 <div>
   <p>
-    We have diligent, passionate, motivate, and thoughtful team members who are making the world better!
+    Meet our dedicated and passionate team — thoughtful minds united by a shared mission to make the world better!
   </p>
 
   <div style="margin-top: 1rem; text-align: right;">
