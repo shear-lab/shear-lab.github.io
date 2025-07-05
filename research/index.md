@@ -21,7 +21,12 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 ## IN PROGRESS
 {% for cite in site.data.inprogress %}
 
-  {% include citation.html cite=cite style="rich" %}
+<div style="display: flex; align-items: center; margin-bottom: 2rem;">
+  <img src="{{ '/images/Elsevier.png' | relative_url }}" alt="Elsevier Logo" style="width: 60px; margin-right: 1rem;" />
+  <div style="flex: 1;">
+    {% include citation.html cite=cite style="rich" %}
+  </div>
+</div>
 
 {% endfor %}
 
