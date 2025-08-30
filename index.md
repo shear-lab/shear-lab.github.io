@@ -9,9 +9,10 @@ title: Home
 <div style="margin-top: 1rem; text-align: right;">
   <ul class="custom-list" style="margin: 0;">
     <li>LARGE-SCALE EXPERIMENTAL TESTING</li>
+    <li>STEEL/COMPOSITE & HYBRID SYSTEM</li>
     <li>NUMERICAL ANALYSIS</li>
-    <li>STRUCTURAL HEALTH MONITORING</li>
-    <li>DECISION-MAKING</li>
+    <li>VISION-BASED SHM</li>
+    <li>OPTIMAL DECISION-MAKING</li>
   </ul>
 
   <div>
