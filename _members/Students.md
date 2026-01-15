@@ -5,7 +5,6 @@ role: |
   BS course
   (prospective graduate student)
 group: Student
-email: ally0812@cau.ac.kr
 links:
   google-scholar: 
 ---
@@ -15,3 +14,6 @@ links:
   <li><strong>BS</strong> – Architectural Engineering, Chung-Ang University (2022~)</li>
 </ul>
 
+<ul style="text-align: left;">
+  <li><strong>Email:</strong> ally0812@cau.ac.kr</li>
+</ul>
