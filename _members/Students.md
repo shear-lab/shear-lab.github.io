@@ -1,6 +1,6 @@
 ---
 name: Gyuri Park
-<!-- image: images/GP.jpg -->
+<!-- image: images/GP_image.jpg -->
 role: |
   BS course
   (prospective graduate student)
