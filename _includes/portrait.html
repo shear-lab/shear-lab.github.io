@@ -38,7 +38,7 @@
 
     {% if member.role %}
       <span class="portrait-role">
-        {{ member.role }}
+        {{ member.role | newline_to_br }}
       </span>
     {% endif %}
 
