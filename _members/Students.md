@@ -12,6 +12,6 @@ links:
 
 <h2 style="text-align: left;">Education</h2>
 <ul style="text-align: left;">
-  <li><strong>BS</strong> – Architectural Engineering, Yonsei University (2022~)</li>
+  <li><strong>BS</strong> – Architectural Engineering, Chung-Ang University (2022~)</li>
 </ul>
 
