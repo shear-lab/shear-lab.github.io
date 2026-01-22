@@ -2,7 +2,7 @@
 layout: default
 title: Home
 ---
-
+ 
 ## INSIDE THE LAB
 
 {% capture text %}
