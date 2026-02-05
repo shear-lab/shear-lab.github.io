@@ -1,24 +1,61 @@
 {% assign button = include %}
 {% assign button = button | hash_default: site.data.types[include.type] %}
 
+{%- comment -%}
+  Copy-to-clipboard mode:
+  - Enabled when include.copy is true OR type starts with "copy-"
+  - Renders <button> instead of <a> to avoid navigation
+{%- endcomment -%}
+{% assign is_copy = false %}
+{% if include.copy %}
+  {% assign is_copy = true %}
+{% endif %}
+{% if include.type and include.type contains "copy-" %}
+  {% assign is_copy = true %}
+{% endif %}
+
 {% if button.link or button.icon or button.text %}
   <div class="button-wrapper">
-    <a
-      class="button"
-      href="{{ button.link | replace: "$LINK", button.link | relative_url }}"
-      {% if button.tooltip %}
-        data-tooltip="{{ button.tooltip | xml_escape }}"
-      {% endif %}
-      data-style="{{ include.style }}"
-      {% if include.flip %}
-        data-flip
-      {% endif %}
-      aria-label="{{ button.tooltip | default: button.icon | default: "button" | regex_strip }}"
-    >
-      {% include icon.html icon=button.icon %}
-      {% if button.text and button.text != "" %}
-        <span>{{ button.text }}</span>
-      {% endif %}
-    </a>
+
+    {% if is_copy %}
+      <button
+        class="button"
+        type="button"
+        data-copy="{{ include.copy_text | default: button.text | xml_escape }}"
+        {% if button.tooltip %}
+          data-tooltip="{{ button.tooltip | xml_escape }}"
+        {% endif %}
+        data-style="{{ include.style }}"
+        {% if include.flip %}
+          data-flip
+        {% endif %}
+        aria-label="{{ button.tooltip | default: button.icon | default: 'copy button' | regex_strip }}"
+      >
+        {% include icon.html icon=button.icon %}
+        {% if button.text and button.text != "" %}
+          <span>{{ button.text }}</span>
+        {% endif %}
+      </button>
+
+    {% else %}
+      <a
+        class="button"
+        href="{{ button.link | replace: "$LINK", button.link | relative_url }}"
+        {% if button.tooltip %}
+          data-tooltip="{{ button.tooltip | xml_escape }}"
+        {% endif %}
+        data-style="{{ include.style }}"
+        {% if include.flip %}
+          data-flip
+        {% endif %}
+        aria-label="{{ button.tooltip | default: button.icon | default: "button" | regex_strip }}"
+      >
+        {% include icon.html icon=button.icon %}
+        {% if button.text and button.text != "" %}
+          <span>{{ button.text }}</span>
+        {% endif %}
+      </a>
+    {% endif %}
+
   </div>
 {% endif %}
