@@ -624,22 +624,23 @@
     
       function showToast(message, anchorEl) {
         const toast = document.createElement("div");
-        toast.textContent = message;
         toast.className = "copy-toast";
+        toast.textContent = message;
     
         document.body.appendChild(toast);
     
+        // 🔑 핵심: 클릭한 버튼 위치 계산
         const rect = anchorEl.getBoundingClientRect();
-        const top = rect.top + window.scrollY - 10;     // above button
-        const left = rect.left + window.scrollX + rect.width / 2;
     
-        toast.style.top = top + "px";
-        toast.style.left = left + "px";
+        toast.style.left =
+          rect.left + rect.width / 2 + window.scrollX + "px";
+        toast.style.top =
+          rect.top + window.scrollY - 8 + "px"; // 버튼 바로 위
     
-        // animate in
-        requestAnimationFrame(() => toast.classList.add("show"));
+        requestAnimationFrame(() => {
+          toast.classList.add("show");
+        });
     
-        // remove after 1s
         setTimeout(() => {
           toast.classList.remove("show");
           setTimeout(() => toast.remove(), 200);
@@ -650,7 +651,7 @@
         const btn = e.target.closest(".button[data-copy]");
         if (!btn) return;
     
-        const text = btn.getAttribute("data-copy") || "";
+        const text = btn.getAttribute("data-copy");
         if (!text) return;
     
         copyText(text).then(() => {
@@ -659,6 +660,6 @@
       });
     })();
     </script>
-   
+  
   </body>
 </html>
