@@ -7,9 +7,9 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-user-plus" %}Hiring
 
-We are recruiting highly motivated BS, MS, PhD students, and postdoctoral researchers.  
+We are recruiting highly motivated **BS, MS, PhD students, and postdoctoral researchers.**  
 
-**We offer Competitive salaries and strong research support.**
+We offer **competitive salaries and strong research support.**
 
 Preferred skills (not mandatory; training will be provided):
 - Machine learning
