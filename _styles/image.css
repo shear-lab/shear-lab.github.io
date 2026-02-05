@@ -1,6 +1,8 @@
+@charset "UTF-8";
 img {
   max-width: 100%;
-  max-height: 100%;
+  height: auto; /* 비율 유지 */
+  display: block;
 }
 
 /*# sourceMappingURL=image.css.map */
