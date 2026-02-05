@@ -15,9 +15,7 @@ nav:
   <img src="{{ '/images/ERC.png' | relative_url }}"
        alt="Carbon-neutral structural optimization techniques"
        style="max-width: 650px; width: 100%;">
-  <figcaption style="font-size: 11px; color: #555;">
-    Carbon-neutral structural optimization techniques.
-  </figcaption>
+  
 </figure>
 
 {% include section.html %}
