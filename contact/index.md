@@ -11,11 +11,15 @@ nav:
   include button.html
   type="email"
   text="sangwookpark@cau.ac.kr"
+  copy=true
+  copy_text="sangwookpark@cau.ac.kr"
 %}
 {%
   include button.html
   type="phone"
   text="02-820-5210"
+  copy=true
+  copy_text="02-820-5210"
 %}
 {%
   include button.html
