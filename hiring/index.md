@@ -19,6 +19,8 @@ Preferred skills (not mandatory; training will be provided):
 - Abaqus
 - Experimental instrumentation and data acquisition
 
+To apply, please send **a one-page CV** to the PI via email.
+
 {%
   include button.html
   type="email"
