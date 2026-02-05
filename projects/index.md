@@ -12,7 +12,7 @@ nav:
 </ul>
 
 <figure style="text-align: center;">
-  <img src="/images/projects/ERC.png"
+  <img src="/images/ERC.png"
        alt="Carbon-neutral structural optimization techniques"
        style="max-width: 650px; width: 100%;">
   <figcaption style="font-size: 11px; color: #555;">
