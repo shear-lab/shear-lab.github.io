@@ -7,7 +7,11 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-user-plus" %}Hiring
 
-We are recruiting highly motivated **BS, MS, PhD students, and postdoctoral researchers.**  
+Recruiting: 
+- BS
+- MS
+- PhD
+- Postdoc  
 
 We offer **competitive salaries and strong research support.**
 
@@ -19,12 +23,6 @@ Preferred skills (not mandatory; training will be provided):
 - Abaqus
 - Experimental instrumentation and data acquisition
 
-To apply, please send **a one-page CV** to the PI via email.
-
-{%
-  include button.html
-  type="email"
-  text="sangwookpark@cau.ac.kr"
-%}
+To apply, please send **a one-page CV** to the PI via email: sangwookpark@cau.ac.kr
 
 {% include section.html %}
