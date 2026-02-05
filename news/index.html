@@ -716,6 +716,30 @@
         return Promise.resolve();
       }
     
+      function showToast(message, anchorEl) {
+        const toast = document.createElement("div");
+        toast.textContent = message;
+        toast.className = "copy-toast";
+    
+        document.body.appendChild(toast);
+    
+        const rect = anchorEl.getBoundingClientRect();
+        const top = rect.top + window.scrollY - 10;     // above button
+        const left = rect.left + window.scrollX + rect.width / 2;
+    
+        toast.style.top = top + "px";
+        toast.style.left = left + "px";
+    
+        // animate in
+        requestAnimationFrame(() => toast.classList.add("show"));
+    
+        // remove after 1s
+        setTimeout(() => {
+          toast.classList.remove("show");
+          setTimeout(() => toast.remove(), 200);
+        }, 900);
+      }
+    
       document.addEventListener("click", function (e) {
         const btn = e.target.closest(".button[data-copy]");
         if (!btn) return;
@@ -724,12 +748,7 @@
         if (!text) return;
     
         copyText(text).then(() => {
-          const old = btn.getAttribute("data-tooltip");
-          btn.setAttribute("data-tooltip", "Copied!");
-          setTimeout(() => {
-            if (old) btn.setAttribute("data-tooltip", old);
-            else btn.removeAttribute("data-tooltip");
-          }, 900);
+          showToast("Copied!", btn);
         });
       });
     })();
