@@ -1,7 +1,7 @@
 ---
 title: Hiring
 nav:
-  order: 5
+  order: 4
   tooltip: Open positions and how to apply
 ---
 
