@@ -3615,5 +3615,42 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
 </footer>
 
+    <script>
+    (function () {
+      function copyText(text) {
+        if (navigator.clipboard && window.isSecureContext) {
+          return navigator.clipboard.writeText(text);
+        }
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        document.execCommand("copy");
+        document.body.removeChild(ta);
+        return Promise.resolve();
+      }
+    
+      document.addEventListener("click", function (e) {
+        const btn = e.target.closest(".button[data-copy]");
+        if (!btn) return;
+    
+        const text = btn.getAttribute("data-copy") || "";
+        if (!text) return;
+    
+        copyText(text).then(() => {
+          const old = btn.getAttribute("data-tooltip");
+          btn.setAttribute("data-tooltip", "Copied!");
+          setTimeout(() => {
+            if (old) btn.setAttribute("data-tooltip", old);
+            else btn.removeAttribute("data-tooltip");
+          }, 900);
+        });
+      });
+    })();
+    </script>
+   
   </body>
 </html>
