@@ -1,7 +1,7 @@
 ---
 title: NEWS
 nav:
-  order: 4
+  order: 5
   tooltip: Musings and miscellany
 ---
 
