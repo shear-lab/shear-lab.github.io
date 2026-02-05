@@ -7,8 +7,6 @@ nav:
 
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
 
-If you're a motivated and passionate individual—or simply curious to see where your drive can take you—I’d love to hear from you. Feel free to reach out with your CV and let’s explore how we can make a meaningful impact together.
-
 {%
   include button.html
   type="email"
