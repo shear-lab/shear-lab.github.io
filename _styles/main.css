@@ -1,3 +1,4 @@
+@charset "UTF-8";
 main {
   display: flex;
   flex-direction: column;
@@ -5,13 +6,13 @@ main {
 }
 
 .copy-toast {
-  position: absolute;
+  position: fixed; /* ⭐ 필수 */
   transform: translate(-50%, -100%);
   padding: 6px 10px;
   border-radius: 999px;
   font-size: 12px;
   line-height: 1;
-  background: rgba(0, 0, 0, 0.78);
+  background: rgba(0, 0, 0, 0.8);
   color: #fff;
   opacity: 0;
   pointer-events: none;
