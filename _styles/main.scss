@@ -103,3 +103,23 @@ main {
   line-height: 1.55;
   color: #444;
 }
+
+.site-header img,
+.navbar img,
+.navbar-brand img,
+.site-title img,
+.logo img{
+  max-height: 34px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 로고가 flex로 눌려서 찌그러지는 경우 방지 */
+.navbar-brand,
+.site-title,
+.logo{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
