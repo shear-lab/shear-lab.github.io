@@ -26,3 +26,23 @@ main {
   opacity: 1;
   transform: translate(-50%, -120%);
 }
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.research-item {
+  background: #fafafa;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  font-size: 0.95rem;
+}
+
+.research-item img {
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
