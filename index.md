@@ -8,11 +8,11 @@ title: Home
 {% capture text %}
 <div style="margin-top: 1rem; text-align: right;">
   <ul class="custom-list" style="margin: 0;">
-    <li>LARGE-SCALE EXPERIMENTAL TESTING</li>
-    <li>STEEL/COMPOSITE & HYBRID SYSTEM</li>
-    <li>NUMERICAL ANALYSIS</li>
-    <li>VISION-BASED SHM</li>
-    <li>OPTIMAL DECISION-MAKING</li>
+    <li>Steel & hybrid structural systems</li>
+    <li>Earthquakes</li>
+    <li>Numerical analysis</li>
+    <li>Vision & AI-driven SHM</li>
+    <li>MOEAs based optimzation and decision-making</li>
   </ul>
 
   <div>
