@@ -213,3 +213,24 @@ main {
 .page-home .thumb img{
   object-fit: contain;
 }
+
+/* If rendered as <img> */
+#inside-the-lab img[src*="Overall"]{
+  object-fit: contain !important;
+}
+
+#inside-the-lab img[src*="photo"]{
+  object-fit: cover !important;
+}
+
+/* If rendered as background-image (feature.html style) */
+#inside-the-lab [style*="Overall"]{
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+#inside-the-lab [style*="photo"]{
+  background-size: cover !important;
+  background-position: center !important;
+}
