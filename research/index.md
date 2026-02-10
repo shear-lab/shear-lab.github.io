@@ -9,7 +9,7 @@ nav:
 
 <section class="research-overview">
 
-### Research Focus
+## Research Focus
 
 <div class="research-grid">
 
