@@ -9,33 +9,49 @@ nav:
 
 <section class="research-overview">
 
-## Research Focus
+<h2>Research Focus</h2>
 
-<div class="research-grid">
+<div class="research-grid-2x2">
 
-<div class="research-item">
-<img src="/images/No1.png" width="100%">
-<strong>Steel & Hybrid Structural Systems</strong><br>
-Composite & hybrid (steel/timber/concrete) components, Seismic performance, Carbon neutral
-</div>
+  <div class="research-card">
+    <div class="research-thumb">
+      <img src="/images/No1.png" alt="Steel & Hybrid Structural Systems">
+    </div>
+    <div class="research-body">
+      <h3>Steel & Hybrid Structural Systems</h3>
+      <p>Composite & hybrid (steel/timber/concrete) components, seismic performance, carbon-neutral design.</p>
+    </div>
+  </div>
 
-<div class="research-item">
-<img src="/images/No2.png" width="100%">
-<strong>Large-Scale Experimental Testing</strong><br>
-Component- and system-level testing for seismic performance evaluation and model validation.
-</div>
+  <div class="research-card">
+    <div class="research-thumb">
+      <img src="/images/No2.png" alt="Large-Scale Experimental Testing">
+    </div>
+    <div class="research-body">
+      <h3>Large-Scale Experimental Testing</h3>
+      <p>Component- and system-level testing for seismic performance evaluation and model validation.</p>
+    </div>
+  </div>
 
-<div class="research-item">
-<img src="/images/No3.png" width="100%">
-<strong>Vision- and AI-Driven Structural Health Monitoring</strong><br>
-LiDAR, computer vision, and foundation-model-based monitoring for digital twin applications.
-</div>
+  <div class="research-card">
+    <div class="research-thumb">
+      <img src="/images/No3.png" alt="Vision- and AI-Driven Structural Health Monitoring">
+    </div>
+    <div class="research-body">
+      <h3>Vision- and AI-Driven Structural Health Monitoring</h3>
+      <p>LiDAR, computer vision, and foundation-model-based monitoring for digital twin applications.</p>
+    </div>
+  </div>
 
-<div class="research-item">
-<img src="/images/No4.png" width="100%">
-<strong>MOEA Optimization & Decision-Making</strong><br>
-Multi- and many-objective optimization for seismic design and retrofit/repair
-</div>
+  <div class="research-card">
+    <div class="research-thumb">
+      <img src="/images/No4.png" alt="MOEA Optimization & Decision-Making">
+    </div>
+    <div class="research-body">
+      <h3>MOEA Optimization & Decision-Making</h3>
+      <p>Multi- and many-objective optimization for seismic design and retrofit/repair decision support.</p>
+    </div>
+  </div>
 
 </div>
 
@@ -46,7 +62,5 @@ Multi- and many-objective optimization for seismic design and retrofit/repair
 ## All PUBLICATIONS
 
 {% include search-box.html %}
-
 {% include search-info.html %}
-
 {% include list.html data="citations" component="citation" style="rich" %}
