@@ -127,4 +127,16 @@ main {
   gap: 10px;
 }
 
+.page-research h1 {
+  margin-bottom: 0.4rem;
+}
+
+.research-overview h2 {
+  margin-top: 0.2rem;
+}
+
+.research-grid-2x2 {
+  margin-top: 0.5rem; /* 기존 1rem → 절반 */
+}
+
 /*# sourceMappingURL=main.css.map */
