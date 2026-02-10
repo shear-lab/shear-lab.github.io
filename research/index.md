@@ -32,7 +32,7 @@ LiDAR, computer vision, and foundation-model-based monitoring for digital twin a
 </div>
 
 <div class="research-item">
-<img src="/images/No4.jpg" width="100%">
+<img src="/images/No4.png" width="100%">
 <strong>MOEA Optimization & Decision-Making</strong><br>
 Multi- and many-objective optimization for seismic design and retrofit/repair
 </div>
