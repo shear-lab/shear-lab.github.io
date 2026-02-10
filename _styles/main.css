@@ -218,16 +218,41 @@ main {
   object-fit: cover !important;
 }
 
-/* If rendered as background-image (feature.html style) */
-#inside-the-lab [style*=Overall] {
+/* =========================================
+   HOME (Inside the Lab): no crop + less whitespace
+   1st feature (Overall diagram): contain
+   2nd feature (photo): cover
+   ========================================= */
+/* 0) feature 카드에서 잘라버리는 부모를 먼저 해제 */
+#inside-the-lab * {
+  overflow: visible !important;
+}
+
+/* 1) feature.html이 background-image를 쓰는 경우 */
+#inside-the-lab > *:nth-of-type(1) [style*=background-image] {
   background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
 }
 
-#inside-the-lab [style*=photo] {
+#inside-the-lab > *:nth-of-type(2) [style*=background-image] {
   background-size: cover !important;
   background-position: center !important;
+}
+
+/* 2) feature.html이 <img>를 쓰는 경우 */
+#inside-the-lab > *:nth-of-type(1) img {
+  width: 100% !important;
+  height: auto !important; /* ✅ height:100% 금지 */
+  object-fit: contain !important;
+  display: block !important;
+}
+
+#inside-the-lab > *:nth-of-type(2) img {
+  width: 100% !important;
+  height: auto !important; /* ✅ height:100% 금지 */
+  object-fit: cover !important;
+  display: block !important;
 }
 
 /*# sourceMappingURL=main.css.map */
