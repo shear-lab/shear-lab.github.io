@@ -62,4 +62,146 @@ main {
    ============================= */
 .research-grid-2x2 {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+  margin-top: 0.5rem; /* tighter */
+}
+
+@media (max-width: 900px){
+  .research-grid-2x2{
+    grid-template-columns: 1fr;
+  }
+}
+
+.research-card{
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.research-thumb{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #ffffff;
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.research-thumb img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* no crop */
+  display: block;
+}
+
+.research-body{
+  padding: 1rem 1.2rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.research-body h3{
+  margin: 0 0 0.5rem 0;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.research-body p{
+  margin: 0;
+  line-height: 1.55;
+  color: #444;
+}
+
+/* Research page spacing tweaks (only on Research page) */
+.page-research h1 {
+  margin-top: -0.6rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.2;
+}
+
+.page-research .research-overview h2 {
+  margin-top: 0.1rem;
+  margin-bottom: 0.4rem;
+}
+
+/* =============================
+   Logo sizing (nav small / hero large)
+   - img and svg 모두 커버
+   ============================= */
+
+/* Nav/logo in menu bar: small */
+.navbar-brand img,
+.navbar-brand svg,
+.site-header .navbar img,
+.site-header .navbar svg{
+  height: 34px;
+  max-height: 34px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Hero/main logo: large */
+.hero img,
+.hero svg,
+.banner img,
+.banner svg,
+.masthead img,
+.masthead svg,
+.header-hero img,
+.header-hero svg,
+.site-hero img,
+.site-hero svg,
+.site-title img,
+.site-title svg{
+  height: 90px;
+  max-height: 90px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Prevent logo squish */
+.navbar-brand,
+.site-title,
+.logo{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1;
+}
+
+/* ===== Nav logo stays small ===== */
+.navbar-brand img,
+.site-header .navbar img{
+  max-height: 34px !important;
+  height: auto !important;
+  width: auto !important;
+  object-fit: contain !important;
+}
+
+/* ===== FORCE: hero logo size (home top logo) ===== */
+.hero img,
+.banner img,
+.masthead img,
+.header-hero img,
+.site-hero img,
+.site-title img{
+  max-height: 90px !important;
+  height: auto !important;
+  width: auto !important;
+  object-fit: contain !important;
+}
+
+/* ===== If logo is a background-image, enlarge the container ===== */
+.site-title,
+.logo,
+.brand,
+.navbar-brand{
+  min-height: 90px;
+}
