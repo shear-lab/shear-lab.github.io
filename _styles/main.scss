@@ -141,3 +141,16 @@ main {
 .research-grid-2x2 {
   margin-top: 0.5rem;   /* 기존 1rem → 절반 */
 }
+
+
+.hero img,
+.banner img,
+.masthead img,
+.header-hero img,
+.site-hero img,
+.site-title img {
+  max-height: 90px !important;  /* 72~110 사이로 취향 조절 */
+  height: auto !important;
+  width: auto !important;
+  object-fit: contain !important;
+}
