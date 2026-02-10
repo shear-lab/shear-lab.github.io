@@ -5,6 +5,8 @@ title: Home
  
 ## INSIDE THE LAB
 
+<section id="inside-the-lab">
+
 {% capture text %}
 <div style="margin-top: 1rem; text-align: right;">
   <ul class="custom-list" style="margin: 0;">
@@ -35,6 +37,9 @@ title: Home
   title="RESEARCH FOCUS"
   text=text
 %}
+
+</section>
+
 
 {% capture text %}
 <div>
