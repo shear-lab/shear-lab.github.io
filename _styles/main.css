@@ -46,14 +46,13 @@ main {
 }
 
 .research-grid-2x2 {
-  display: grid;
+  display: grid !important;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
   align-items: stretch;
   margin-top: 1rem;
 }
 
-/* 모바일 대응 */
 @media (max-width: 900px) {
   .research-grid-2x2 {
     grid-template-columns: 1fr;
@@ -69,10 +68,9 @@ main {
   height: 100%;
 }
 
-/* 이미지 영역 통일 */
 .research-thumb {
   width: 100%;
-  aspect-ratio: 16/9; /* 이미지 비율 고정 */
+  aspect-ratio: 16/9;
   background: #f3f4f6;
   overflow: hidden;
 }
@@ -80,11 +78,10 @@ main {
 .research-thumb img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* 핵심: 크기 달라도 동일 프레임 */
+  object-fit: cover;
   display: block;
 }
 
-/* 텍스트 정렬 통일 */
 .research-body {
   padding: 1rem 1.2rem 1.2rem;
   display: flex;
