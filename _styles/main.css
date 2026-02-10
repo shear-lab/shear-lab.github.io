@@ -33,7 +33,7 @@ main {
 
 /* =============================
    Research (legacy grid) - optional
-   (예전 research-item 방식 사용 안 하면 지워도 됨)
+   (예전 research-item 방식 사용 안 하면 삭제 가능)
    ============================= */
 .research-grid {
   display: grid;
@@ -63,7 +63,7 @@ main {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
   align-items: stretch;
-  margin-top: 0.5rem; /* tighter */
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 900px) {
@@ -93,7 +93,7 @@ main {
 .research-thumb img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* no crop */
+  object-fit: contain;
   display: block;
 }
 
@@ -116,7 +116,7 @@ main {
   color: #444;
 }
 
-/* Research page spacing tweaks (only on Research page) */
+/* Research page spacing tweaks */
 .page-research h1 {
   margin-top: -0.6rem;
   margin-bottom: 0.3rem;
@@ -130,9 +130,9 @@ main {
 
 /* =============================
    Logo sizing (nav small / hero large)
-   - img and svg 모두 커버
+   - img + svg 모두 커버
    ============================= */
-/* Nav/logo in menu bar: small */
+/* Nav (menu bar) logo: small */
 .navbar-brand img,
 .navbar-brand svg,
 .site-header .navbar img,
@@ -162,6 +162,16 @@ main {
   object-fit: contain;
 }
 
+/* If hero logo is a background-image */
+.site-title,
+.logo,
+.brand {
+  min-height: 90px;
+  background-size: auto 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* Prevent logo squish */
 .navbar-brand,
 .site-title,
@@ -172,34 +182,31 @@ main {
   line-height: 1;
 }
 
-/* ===== Nav logo stays small ===== */
-.navbar-brand img,
-.site-header .navbar img {
-  max-height: 34px !important;
-  height: auto !important;
-  width: auto !important;
+/* =============================
+   Home page images (Inside the Lab) - prevent cropping
+   Research에서 쓴 'contain + overflow 해제'를 홈에도 적용
+   ============================= */
+/* 1) 가장 이상적: 메인 섹션에 id="inside-the-lab" 를 붙였을 때 */
+#inside-the-lab img {
+  width: 100% !important;
+  height: 100% !important;
   object-fit: contain !important;
+  display: block !important;
 }
 
-/* ===== FORCE: hero logo size (home top logo) ===== */
-.hero img,
-.banner img,
-.masthead img,
-.header-hero img,
-.site-hero img,
-.site-title img {
-  max-height: 90px !important;
+#inside-the-lab figure,
+#inside-the-lab .image,
+#inside-the-lab .thumb,
+#inside-the-lab .media {
+  overflow: visible !important;
   height: auto !important;
-  width: auto !important;
-  object-fit: contain !important;
 }
 
-/* ===== If logo is a background-image, enlarge the container ===== */
-.site-title,
-.logo,
-.brand,
-.navbar-brand {
-  min-height: 90px;
+/* 2) id를 못 붙이는 경우를 위한 안전장치(홈에서만) */
+.page-home figure img,
+.page-home .image img,
+.page-home .thumb img {
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=main.css.map */
