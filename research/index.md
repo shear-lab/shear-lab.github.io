@@ -59,7 +59,7 @@ nav:
 
 <hr>
 
-## All PUBLICATIONS
+<h2>All PUBLICATIONS</h2>
 
 {% include search-box.html %}
 {% include search-info.html %}
