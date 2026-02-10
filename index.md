@@ -38,9 +38,6 @@ title: Home
   text=text
 %}
 
-</section>
-
-
 {% capture text %}
 <div>
   <p>
@@ -67,3 +64,5 @@ title: Home
   title="TEAM MEMBERS"
   text=text
 %}
+
+</section>
