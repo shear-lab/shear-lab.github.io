@@ -131,7 +131,9 @@ main {
 }
 
 .page-research h1 {
-  margin-bottom: 0.4rem;
+  margin-top: -0.6rem;   /* 🔥 이게 핵심 */
+  margin-bottom: 0.3rem;
+  line-height: 1.2;
 }
 
 .research-overview h2 {
