@@ -107,11 +107,8 @@ main {
   margin-bottom: 0.6rem;
 }
 
-.site-header img,
-.navbar img,
 .navbar-brand img,
-.site-title img,
-.logo img {
+.site-header .navbar img {
   max-height: 34px;
   width: auto;
   height: auto;
