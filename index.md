@@ -14,7 +14,7 @@ title: Home
     <li>Earthquakes</li>
     <li>Numerical analysis</li>
     <li>Vision & AI-driven SHM</li>
-    <li>MOEAs based optimzation and decision-making</li>
+    <li>MOEAs&nbsp;based&nbsp;optimization&nbsp;and&nbsp;decision-making</li>
   </ul>
 
   <div>
