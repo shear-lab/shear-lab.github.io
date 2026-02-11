@@ -224,15 +224,15 @@ main {
    ========================================= */
 /* ✅ 레이아웃 깨는 width:100% 제거 + 폭 비율만 지정 */
 #inside-the-lab .feature-image {
-  flex: 0 0 64% !important; /* 왼쪽 이미지 폭 */
-  width: auto !important; /* ⭐️ 핵심: 100% 금지 */
+  flex: 0 0 58% !important;
+  width: auto !important;
   overflow: hidden;
   border-radius: 14px;
 }
 
 #inside-the-lab .feature-text {
-  flex: 1 1 36% !important; /* 오른쪽 텍스트 폭 */
-  min-width: 260px; /* 너무 얇아지는 것 방지 */
+  flex: 0 0 42% !important;
+  min-width: 320px; /* ⭐ 조금 키워줌 */
 }
 
 /* 모바일에서는 세로로 */
