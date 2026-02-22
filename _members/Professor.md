@@ -25,7 +25,7 @@ links:
   </li>
 </ul>
 
-<div style="margin-left: 28px;">  <!-- Education bullet과 동일 값 -->
+<div style="margin-left: 200px;">  <!-- Education bullet과 동일 값 -->
   <h2>Professional Experiences</h2>
 
   <ul>
