@@ -21,7 +21,7 @@ links:
   <li><strong>Assistant Professor</strong> – Chung-Ang University (KR, 2025-current)</li>
   <li><strong>Research Associate</strong> – Wake Forest University (US, 2024–2025)</li>
   <li><strong>Postdoctoral Researcher</strong> – Oklahoma State University (US, 2023–2024)</li>
-  <li><strong>Research Assitant</strong> – The University of Texas at Austin (US, 2019–2023)</li>
+  <li><strong>Research Assistant</strong> – The University of Texas at Austin (US, 2019–2023)</li>
   <li><strong>Research Engineer</strong> – Yonsei University (KR, 2016–2018)</li>
   <li><strong>Research Assistant</strong> – Yonsei University (KR, 2014–2016)</li> 
 </ul>
