@@ -7,8 +7,9 @@ nav:
 
 <h1 markdown="0">{% include icon.html icon="fa-solid fa-wrench" %}Projects</h1>
 
-<ul style="font-size: 12px; text-align: left;">
-  <li>2025.09–2030.02, 순환경제 기반 탄소중립 건축센터 &lt;탄소중립형 내진 설계 및 유지관리 최적화 기술&gt;</li>
+<ul style="font-size: 14px; text-align: left;">
+  <li>2025.09–2027.08, 중앙대학교, Seismic performance of low-rise steel moment-resisting frames with damaged fuse connections under successive earthquakes</li>
+  <li>2025.09–2030.02, 한국연구재단, 순환경제 기반 탄소중립 건축센터 - 탄소중립형 내진 설계 및 유지관리 최적화 기술</li>
 </ul>
 
 <figure>
