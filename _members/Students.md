@@ -3,7 +3,6 @@ name: Gyuri Park
 image: images/gp.png
 role: |
   BS course
-  (prospective graduate student)
 group: Student
 links:
   google-scholar: 
