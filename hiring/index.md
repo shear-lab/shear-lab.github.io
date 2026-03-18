@@ -11,7 +11,7 @@ nav:
 - Undergraduate (BS) / Master’s (MS) / Doctoral (PhD)
 - Postdoctoral researchers
 
-We offer **competitive salaries and strong research support.**
+We offer **competitive** salaries and strong research support.
 
 
 **[2]  Preferred skills (not mandatory; training will be provided):**
