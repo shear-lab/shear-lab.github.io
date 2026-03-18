@@ -7,20 +7,17 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-user-plus" %}Hiring
 
-[1]  Open positions:
-- Undergraduate (BS)
-- Master’s (MS)
-- Doctoral (PhD)
+**[1]  Open positions:**
+- Undergraduate (BS) / Master’s (MS) / Doctoral (PhD)
 - Postdoctoral researchers
 
 We offer **competitive salaries and strong research support.**
 
-[2]  Preferred skills (not mandatory; training will be provided):
+
+**[2]  Preferred skills (not mandatory; training will be provided):**
 - Machine learning
-- Python
-- MATLAB
-- OpenSees
-- Abaqus
+- Python / MATLAB
+- OpenSees / Abaqus
 - Experimental instrumentation and data acquisition
 
 To apply, please send **a one-page CV** to the PI via email: sangwookpark@cau.ac.kr
