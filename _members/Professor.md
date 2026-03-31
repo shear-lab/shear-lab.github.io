@@ -30,7 +30,11 @@ links:
   <h2>Professional Experiences</h2>
 
   <ul>
-    <li><strong>Assistant Professor</strong>, Chung-Ang University  (KR, 2025–present)</li>
+    <li><strong>제16기 설계심의분과위원</strong>, 국토교통부 중앙건설기술심의위원회 (KR, 2026.03–present)</li>
+    <li><strong>공학교육혁신센터 사무국장</strong>, 중앙대학교 (KR, 2026.03–present)</li>
+    <li><strong>건설기술심의위원회</strong>, 충청북도 (KR, 2026.02–present)</li>
+    <li><strong>제7기 건설안전분야 위원</strong>, 서울주택도시개발공사 (KR, 2025.11–present)</li>    
+    <li><strong>Assistant Professor</strong>, Chung-Ang University  (KR, 2025.09–present)</li>
     <li><strong>Research Associate</strong>, Wake Forest University  (US, 2024–2025)</li>
     <li><strong>Postdoctoral Researcher</strong>, Oklahoma State University  (US, 2023–2024)</li>
     <li><strong>Research Assistant</strong>, The University of Texas at Austin  (US, 2019–2023)</li>
