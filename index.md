@@ -3,7 +3,7 @@ layout: default
 title: Home 
 ---
    
-## INSIDE THE LAB
+## INSIDE THE LAB 
 
 <section id="inside-the-lab">
 
