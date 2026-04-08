@@ -15,6 +15,16 @@
   orcid: 0009-0008-5191-1732
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.12989/SCS.2026.58.2.277
+  title: Experimental and numerical analyses of the behavior of  single shear connections
+    combining pretensioned high strength bolts and fillet welds
+  authors: []
+  publisher: Steel and Composite Structures
+  date: '2026-01-25'
+  link: https://doi.org/hbwbmw
+  orcid: 0009-0008-5191-1732
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1016/j.jobe.2025.113569
   title: Effects of bolted double-angle gravity connections with floor systems on
     building seismic performance
