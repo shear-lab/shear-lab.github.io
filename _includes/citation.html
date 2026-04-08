@@ -1,5 +1,5 @@
 {% if include.lookup %} 
-  {% assign citation = site.data.citations
+  {% assign citation = site.data.citations 
     | where_exp: "citation",
       "citation.id == include.lookup or citation.title contains include.lookup"
     | first %}
