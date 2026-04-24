@@ -4,7 +4,7 @@ nav:
   order: 1 
   tooltip: Published works 
 ---
- 
+  
 <h1 markdown="0">{% include icon.html icon="fa-solid fa-microscope" %} Research</h1>
 
 <section class="research-overview">
