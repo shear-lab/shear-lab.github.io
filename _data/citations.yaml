@@ -1,5 +1,18 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1016/j.autcon.2026.106977
+  title: Automatic monitoring via structure-aware 2D projections from a single point
+    cloud using segment anything model (SAM)-based segmentation
+  authors:
+  - Jisang Lee
+  - Jong Won Ma
+  - Sangwook Park
+  publisher: Automation in Construction
+  date: '2026-07-01'
+  link: https://doi.org/hbzbgw
+  orcid: 0009-0008-5191-1732
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1016/j.tws.2026.114565
   title: Effects of column design variations on seismic performance of steel moment-resisting
     frames with fuse connections
