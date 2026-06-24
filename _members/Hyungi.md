@@ -2,7 +2,7 @@
 name: Hyungi Cho
 image: images/hyungi.jpg
 role: |
-  BS course
+  BS Student
 group: Student
 order: 3
 links:
