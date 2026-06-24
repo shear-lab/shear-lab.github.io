@@ -1,6 +1,6 @@
 ---
 name: Hyungi Cho
-image: images/hyungi.png
+image: images/hyungi.jpg
 role: |
   BS course
 group: Student
