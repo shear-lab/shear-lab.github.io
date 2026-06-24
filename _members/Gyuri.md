@@ -2,7 +2,7 @@
 name: Gyuri Park
 image: images/gp.png
 role: |
-  BS course
+  BS Student
 group: Student
 order: 1
 links:
