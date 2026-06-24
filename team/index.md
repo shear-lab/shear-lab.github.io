@@ -1,5 +1,4 @@
 ---
-
 title: Team
 nav:
 order: 3
