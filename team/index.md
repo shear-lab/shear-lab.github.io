@@ -29,7 +29,6 @@ tooltip: About our team
 
   <div class="team-right">
 
-```
 <div class="team-students">
   {% include list.html
     data="members"
@@ -49,7 +48,6 @@ tooltip: About our team
     sort="order"
   %}
 </div>
-```
 
   </div>
 
