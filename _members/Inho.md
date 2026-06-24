@@ -4,6 +4,7 @@ image: images/inho.png
 role: |
   BS course
 group: Student
+order: 2
 links:
   google-scholar: 
 ---
