@@ -22,13 +22,12 @@
 {% endif %}
 
 {% if years.size > 1 %}
-{{--}}<h3 id="{{ year.name }}">{{ year.name }}</h3>
+<h3 id="{{ year.name }}">{{ year.name }}</h3>
 {% endif %}
 
 {% for d in data %}
 {% assign style = d.style | default: include.style %}
 
-```
 {%
   include {{ include.component | append: ".html" }}
   affiliation=d.affiliation
@@ -64,7 +63,6 @@
   url=d.url
   width=d.width
 %}
-```
 
 {% endfor %}
 {% endfor %}
