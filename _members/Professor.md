@@ -2,7 +2,8 @@
 name: Sangwook Park
 image: images/sp.jpg
 role: Assistant Professor
-<!-- affiliation: Chung-Ang University -->
+group: PI
+order: 0
 
 links:
   google-scholar: iuUI0MQAAAAJ
