@@ -4,6 +4,7 @@ image: images/hyungi.jpg
 role: |
   BS course
 group: Student
+order: 3
 links:
   google-scholar: 
 ---
