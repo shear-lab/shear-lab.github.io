@@ -4,6 +4,7 @@ image: images/gp.png
 role: |
   BS course
 group: Student
+order: 1
 links:
   google-scholar: 
 ---
