@@ -1,5 +1,5 @@
 ---
-name: Inho Paek
+name: Inho Baek
 image: images/inho.png
 role: |
   BS course
