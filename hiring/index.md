@@ -7,9 +7,10 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-user-plus" %}Hiring
 
-**[1]  Open positions:**
-- Undergraduate (BS) / Master’s (MS) / Doctoral (PhD)
-- Postdoctoral researchers
+**[1]  Open positions (as of 06/24):**
+- Undergraduate (BS): 3
+- Master’s (MS): 2
+- Doctoral (PhD): 1
 
 We offer **competitive** salaries and strong research support.
 
