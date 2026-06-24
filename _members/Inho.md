@@ -2,7 +2,7 @@
 name: Inho Baek
 image: images/inho.png
 role: |
-  BS course
+  BS Student
 group: Student
 order: 2
 links:
