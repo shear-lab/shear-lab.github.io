@@ -1,6 +1,6 @@
 ---
 name: Inho Paek
-image: images/Inho.png
+image: images/inho.png
 role: |
   BS course
 group: Student
