@@ -453,16 +453,29 @@
   
 
   <section class="background" data-size="page">
-    <h1 id="team">
+    <h1>—</h1>
+
+<p>title: Team
+nav:
+order: 3
+tooltip: About our team
+———————–</p>
+
+<h1 id="team">
 <i class="icon fa-solid fa-users"></i>Team</h1>
 
-<div style="text-align: center;"> We aim to contribute to a safer, more resilient world through research and innovation in extreme hazard mitigation </div>
+<div style="text-align: center;">
+  We aim to contribute to a safer, more resilient world through research and innovation in extreme hazard mitigation
+</div>
 
 <!-- intentionally blank to remove spacing -->
 
 <div class="team-layout">
 
-<div class="team-pi"> 
+  <!-- Professor -->
+
+  <div class="team-pi">
+    
 
 
 
@@ -511,9 +524,16 @@
 
 
 
- </div>
 
-<div class="team-students"> 
+  </div>
+
+  <!-- Students and Alumni -->
+
+  <div class="team-right">
+
+```
+<div class="team-students">
+  
 
 
 
@@ -633,7 +653,8 @@
 
 
 
- </div>
+
+</div>
 
 <div class="team-alumni">
   <h2>Alumni</h2>
@@ -647,10 +668,85 @@
 
 
 </div>
+```
+
+  </div>
 
 </div>
 
-<style> .team-layout { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 60px; align-items: start; max-width: 950px; margin: 40px auto 0; } .team-pi { min-width: 0; } .team-students { min-width: 0; } /* 교수 목록 */ .team-pi .list { display: grid; grid-template-columns: 1fr; margin: 0; padding: 0; } /* 학생 목록: 오른쪽 2열 */ .team-students .list { display: grid; grid-template-columns: repeat(2, minmax(180px, 1fr)); gap: 40px 30px; margin: 0; padding: 0; } @media (max-width: 800px) { .team-layout { grid-template-columns: 1fr; gap: 50px; } .team-students .list { grid-template-columns: repeat(2, minmax(140px, 1fr)); } } @media (max-width: 520px) { .team-students .list { grid-template-columns: 1fr; } } </style>
+<style>
+.team-layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 60px;
+  align-items: start;
+  max-width: 950px;
+  margin: 40px auto 0;
+}
+
+.team-pi,
+.team-right,
+.team-students {
+  min-width: 0;
+}
+
+/* Professor */
+.team-pi .list {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding: 0;
+}
+
+/* Current students: two columns */
+.team-students .list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  gap: 40px 30px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Alumni section */
+.team-alumni {
+  margin-top: 70px;
+}
+
+.team-alumni h2 {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+/* Alumni: two columns */
+.team-alumni .list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  gap: 40px 30px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+  .team-layout {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .team-students .list,
+  .team-alumni .list {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 520px) {
+  .team-students .list,
+  .team-alumni .list {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 
 <!-- intentionally blank to remove spacing -->
   </section>
