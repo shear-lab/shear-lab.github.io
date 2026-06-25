@@ -31,6 +31,7 @@ links:
   <h2>Professional Experiences</h2>
 
   <ul>
+    <li><strong>제42대 대한건축학회 회지편집위원회 위원</strong>, 대한건축학회 (KR, 2026.05–present)</li>
     <li><strong>건설자문 전문위원</strong>, 한국산업단지공단 (KR, 2026.04–present)</li>
     <li><strong>제16기 설계심의분과위원</strong>, 국토교통부 중앙건설기술심의위원회 (KR, 2026.03–present)</li>
     <li><strong>공학교육혁신센터 사무국장</strong>, 중앙대학교 (KR, 2026.03–present)</li>
