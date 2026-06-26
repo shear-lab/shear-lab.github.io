@@ -1,7 +1,7 @@
 ---
 
 title: INSIGHTS
-  nav:
+nav:
   order: 6
   tooltip: Student reviews of structural engineering topics
 ---
