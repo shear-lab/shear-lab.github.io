@@ -1,10 +1,10 @@
 ---
 
 title: INSIGHTS
-nav:
-order: 6
-tooltip: Student reviews of structural engineering topics
----------------------------------------------------------
+  nav:
+  order: 6
+  tooltip: Student reviews of structural engineering topics
+---
 
 # {% include icon.html icon="fa-solid fa-lightbulb" %}INSIGHTS
 
