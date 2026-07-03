@@ -59,7 +59,7 @@ title: Home
 
 {%
   include feature.html
-  image="images/news/Lab_lunch_0703.jpg"
+  image="images/photo.jpg"
   link="team"
   title="TEAM MEMBERS"
   text=text
