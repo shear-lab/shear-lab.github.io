@@ -91,7 +91,7 @@ nav:
   max-width: none !important;
   border-radius: 28px !important;
   object-fit: cover !important;
-  object-position: center top !important;
+  object-position: center 15% !important;
 }
 
 /* Current students: two columns */
