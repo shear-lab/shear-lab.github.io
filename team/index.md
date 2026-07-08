@@ -16,7 +16,6 @@ nav:
 <div class="team-layout">
 
   <!-- Professor -->
-
   <div class="team-pi">
     {% include list.html
       data="members"
@@ -26,28 +25,27 @@ nav:
   </div>
 
   <!-- Students and Alumni -->
-
   <div class="team-right">
 
-<div class="team-students">
-  {% include list.html
-    data="members"
-    component="portrait"
-    filter="group == 'Student'"
-    sort="order"
-  %}
-</div>
+    <div class="team-students">
+      {% include list.html
+        data="members"
+        component="portrait"
+        filter="group == 'Student'"
+        sort="order"
+      %}
+    </div>
 
-<div class="team-alumni">
-  <h2>Alumni</h2>
+    <div class="team-alumni">
+      <h2>Alumni</h2>
 
-  {% include list.html
-    data="members"
-    component="portrait"
-    filter="group == 'Alumni'"
-    sort="order"
-  %}
-</div>
+      {% include list.html
+        data="members"
+        component="portrait"
+        filter="group == 'Alumni'"
+        sort="order"
+      %}
+    </div>
 
   </div>
 
@@ -56,10 +54,10 @@ nav:
 <style>
 .team-layout {
   display: grid;
-  grid-template-columns: 240px minmax(0, 1fr);
-  gap: 60px;
+  grid-template-columns: 380px minmax(0, 1fr);
+  gap: 70px;
   align-items: start;
-  max-width: 950px;
+  max-width: 1100px;
   margin: 40px auto 0;
 }
 
@@ -69,12 +67,21 @@ nav:
   min-width: 0;
 }
 
-/* Professor */
+/* Professor list */
 .team-pi .list {
   display: grid;
   grid-template-columns: 1fr;
   margin: 0;
   padding: 0;
+}
+
+/* Professor portrait only */
+.team-pi img {
+  width: 340px !important;
+  height: 430px !important;
+  border-radius: 28px !important;
+  object-fit: cover;
+  object-position: center top;
 }
 
 /* Current students: two columns */
@@ -112,6 +119,11 @@ nav:
     gap: 50px;
   }
 
+  .team-pi img {
+    width: 300px !important;
+    height: 380px !important;
+  }
+
   .team-students .list,
   .team-alumni .list {
     grid-template-columns: repeat(2, minmax(140px, 1fr));
@@ -120,6 +132,11 @@ nav:
 
 /* Mobile */
 @media (max-width: 520px) {
+  .team-pi img {
+    width: 260px !important;
+    height: 330px !important;
+  }
+
   .team-students .list,
   .team-alumni .list {
     grid-template-columns: 1fr;
@@ -128,4 +145,3 @@ nav:
 </style>
 
 {% include section.html background="images/background.jpg" dark=true %}
-
