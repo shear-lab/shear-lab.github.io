@@ -77,8 +77,8 @@ nav:
 
 /* Professor portrait only */
 .team-pi img {
-  width: 360px !important;
-  height: 500px !important;
+  width: 450px !important;
+  height: 450px !important;
   border-radius: 28px !important;
   object-fit: cover;
   object-position: center top;
