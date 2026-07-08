@@ -1,6 +1,6 @@
 ---
 name: Sangwook Park
-image: images/sp.jpg
+image: images/Park_profile.jpg
 role: Assistant Professor
 group: PI
 order: 0
