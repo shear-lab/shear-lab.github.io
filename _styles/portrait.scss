@@ -75,5 +75,12 @@
   .portrait-description,
   .portrait-affiliation {
     display: none;
+
+/* Professor profile image adjustment */
+.portrait-image[src*="Park_profile"] {
+  object-fit: contain !important;
+  object-position: center center !important;
+  background: white;
+}
   }
 }
