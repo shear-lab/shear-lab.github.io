@@ -28,23 +28,27 @@ nav:
   <div class="team-right">
 
     <div class="team-students">
-      {% include list.html
-        data="members"
-        component="portrait"
-        filter="group == 'Student'"
-        sort="order"
-      %}
+      <div class="team-students-list">
+        {% include list.html
+          data="members"
+          component="portrait"
+          filter="group == 'Student'"
+          sort="order"
+        %}
+      </div>
     </div>
 
     <div class="team-alumni">
       <h2>Alumni</h2>
 
-      {% include list.html
-        data="members"
-        component="portrait"
-        filter="group == 'Alumni'"
-        sort="order"
-      %}
+      <div class="team-alumni-list">
+        {% include list.html
+          data="members"
+          component="portrait"
+          filter="group == 'Alumni'"
+          sort="order"
+        %}
+      </div>
     </div>
 
   </div>
@@ -54,10 +58,10 @@ nav:
 <style>
 .team-layout {
   display: grid;
-  grid-template-columns: 520px minmax(0, 1fr);
-  gap: 70px;
+  grid-template-columns: 390px minmax(0, 1fr);
+  gap: 60px;
   align-items: start;
-  max-width: 1250px;
+  max-width: 1180px;
   margin: 40px auto 0;
 }
 
@@ -67,12 +71,10 @@ nav:
   min-width: 0;
 }
 
-/* Professor list */
-.team-pi .list {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 0;
-  padding: 0;
+/* Professor */
+.team-pi {
+  display: flex;
+  justify-content: center;
 }
 
 /* Professor portrait container */
@@ -95,12 +97,20 @@ nav:
 }
 
 /* Current students: two columns */
-.team-students .list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(180px, 1fr));
+.team-students-list {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(180px, 1fr)) !important;
   gap: 40px 30px;
   margin: 0;
   padding: 0;
+  width: 100%;
+}
+
+/* Student portraits */
+.team-students-list .portrait {
+  width: 200px !important;
+  max-width: none !important;
+  margin: 0 auto !important;
 }
 
 /* Alumni section */
@@ -114,12 +124,20 @@ nav:
 }
 
 /* Alumni: two columns */
-.team-alumni .list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(180px, 1fr));
+.team-alumni-list {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(180px, 1fr)) !important;
   gap: 40px 30px;
   margin: 0;
   padding: 0;
+  width: 100%;
+}
+
+/* Alumni portraits */
+.team-alumni-list .portrait {
+  width: 200px !important;
+  max-width: none !important;
+  margin: 0 auto !important;
 }
 
 /* Tablet */
@@ -137,12 +155,17 @@ nav:
   .team-pi .portrait img,
   .team-pi img {
     width: 320px !important;
-    height: 320px !important;
+    height: 400px !important;
   }
 
-  .team-students .list,
-  .team-alumni .list {
-    grid-template-columns: repeat(2, minmax(140px, 1fr));
+  .team-students-list,
+  .team-alumni-list {
+    grid-template-columns: repeat(2, minmax(140px, 1fr)) !important;
+  }
+
+  .team-students-list .portrait,
+  .team-alumni-list .portrait {
+    width: 180px !important;
   }
 }
 
@@ -156,12 +179,17 @@ nav:
   .team-pi .portrait img,
   .team-pi img {
     width: 280px !important;
-    height: 280px !important;
+    height: 350px !important;
   }
 
-  .team-students .list,
-  .team-alumni .list {
-    grid-template-columns: 1fr;
+  .team-students-list,
+  .team-alumni-list {
+    grid-template-columns: 1fr !important;
+  }
+
+  .team-students-list .portrait,
+  .team-alumni-list .portrait {
+    width: 200px !important;
   }
 }
 </style>
