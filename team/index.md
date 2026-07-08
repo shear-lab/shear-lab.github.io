@@ -77,7 +77,7 @@ nav:
 
 /* Professor portrait container */
 .team-pi .portrait {
-  width: 450px !important;
+  width: 350px !important;
   max-width: none !important;
   margin: 0 auto !important;
 }
