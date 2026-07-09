@@ -1,6 +1,6 @@
 ---
 name: Junan CHAI
-image: images/Junan.jpg
+image: images/Junan.png
 role: |
   BS Student
 group: Student
