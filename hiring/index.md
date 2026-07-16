@@ -8,7 +8,7 @@ nav:
 # {% include icon.html icon="fa-solid fa-user-plus" %}Hiring
 
 **[1]  Current open positions (as of 07/16):**
-- Undergraduate (BS): 0
+- Undergraduate (BS): 1
 - Master’s (MS): 1
 - Doctoral/Integrated (PhD): 1
 
