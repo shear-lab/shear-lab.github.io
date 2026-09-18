@@ -3,6 +3,7 @@ name: Junan CHAI
 image: images/Junan.png 
 role: |
   BS Student
+  <span style="font-size: 0.85em; opacity: 0.7;">Prospective MS</span>
 group: Student
 order: 4
 links:
