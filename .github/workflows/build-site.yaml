@@ -25,6 +25,10 @@ jobs:
 
       - name: Checkout branch contents
         uses: actions/checkout@v4
+        with:
+          # 푸시된 커밋이 아니라 브랜치의 최신 상태를 가져옴
+          # → 직전 단계에서 자동 커밋된 citations.yaml까지 포함해서 빌드
+          ref: ${{ github.ref }}
 
       - name: Install Ruby packages
         uses: ruby/setup-ruby@v1
