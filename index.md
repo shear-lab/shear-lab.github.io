@@ -8,6 +8,25 @@ title: Home
 <section id="inside-the-lab">
 
 {% capture text %}
+<div>
+  <p>
+    Meet our dedicated and passionate team — thoughtful minds united by a shared mission to make the world better!
+  </p>
+
+  <div style="margin-top: 1rem; text-align: right;">
+    {%
+      include button.html
+      link="team"
+      text="MEET OUR TEAM"
+      icon="fa-solid fa-arrow-right"
+      flip=true
+      style="bare"
+    %}
+  </div>
+</div>
+{% endcapture %}
+
+{% capture text %}
 <div style="margin-top: 1rem; text-align: right;">
   <ul class="custom-list" style="margin: 0;">
     <li>Steel & hybrid structural systems</li>
@@ -38,24 +57,7 @@ title: Home
   text=text
 %}
 
-{% capture text %}
-<div>
-  <p>
-    Meet our dedicated and passionate team — thoughtful minds united by a shared mission to make the world better!
-  </p>
 
-  <div style="margin-top: 1rem; text-align: right;">
-    {%
-      include button.html
-      link="team"
-      text="MEET OUR TEAM"
-      icon="fa-solid fa-arrow-right"
-      flip=true
-      style="bare"
-    %}
-  </div>
-</div>
-{% endcapture %}
 
 {%
   include feature.html
