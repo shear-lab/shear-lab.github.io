@@ -59,7 +59,7 @@ title: Home
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/team_0918.jpg"
   link="team"
   title="TEAM MEMBERS"
   text=text
