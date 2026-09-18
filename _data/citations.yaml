@@ -3,7 +3,10 @@
 - id: doi:10.12989/SCS.2026.60.4.08
   title: Seismic performance of low-rise steel moment-resisting  frames with damaged
     fuse connections and post-earthquake  replacements
-  authors: []
+  authors:
+  - Sangwook Park
+  - Patricia Clayton
+  - Jin Woo Moon
   publisher: Steel and Composite Structures
   date: '2026-08-25'
   link: https://doi.org/hcjssj
@@ -41,7 +44,12 @@
 - id: doi:10.12989/SCS.2026.58.2.277
   title: Experimental and numerical analyses of the behavior of  single shear connections
     combining pretensioned high strength bolts and fillet welds
-  authors: []
+  authors:
+  - Sangwook Park
+  - Aws Idris
+  - Mohamed Soliman
+  - Caleb Bennett
+  - Bruce W Russell
   publisher: Steel and Composite Structures
   date: '2026-01-25'
   link: https://doi.org/hbwbmw
