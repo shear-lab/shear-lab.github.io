@@ -289,3 +289,15 @@ main {
   height: 100% !important;
   object-fit: contain !important;     /* 다이어그램 내용이 잘리지 않도록 */
 }
+
+/* -----------------------------------------
+   INSIDE THE LAB 제목과 첫 그림 사이 공백 줄이기
+   (기존: 제목 아래 20px + 섹션 안쪽 여백 40px + 그림 위 40px ≈ 100px)
+   ----------------------------------------- */
+#inside-the-lab{
+  padding-top: 0 !important;          /* 중첩된 section의 위쪽 여백 제거 */
+}
+
+#inside-the-lab > .feature:first-of-type{
+  margin-top: 10px;                   /* 첫 그림 위 여백 (원하는 만큼 조정) */
+}
