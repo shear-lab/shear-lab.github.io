@@ -163,6 +163,13 @@ for index, source in enumerate(sources):
     # preserve fields from input source, overriding existing fields
     citation.update(source)
 
+    # --- 추가: 출판사 데이터에 저자가 없으면 ORCID contributor로 대체 ---
+    # (sources.yaml에 authors를 직접 적은 경우엔 그 값이 우선)
+    orcid_authors = citation.pop("orcid_authors", None)
+    if not get_safe(citation, "authors", []) and orcid_authors:
+        citation["authors"] = orcid_authors
+    # --- 추가 끝 ---
+
     # ensure date in proper format for correct date sorting
     if get_safe(citation, "date", ""):
         citation["date"] = format_date(get_safe(citation, "date", ""))
