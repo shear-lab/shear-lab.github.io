@@ -3,6 +3,7 @@ name: Inho Baek
 image: images/inho.png
 role: |
   BS Student
+  <span style="font-size: 0.85em; opacity: 0.7;">Prospective MS</span>
 group: Student
 order: 2
 links:
