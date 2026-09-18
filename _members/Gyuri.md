@@ -3,6 +3,7 @@ name: Gyuri Park
 image: images/gp.png
 role: |
   BS Student
+  <span style="font-size: 0.85em; opacity: 0.7;">Prospective MS–PhD Integrated</span>
 group: Student
 order: 1
 links:
