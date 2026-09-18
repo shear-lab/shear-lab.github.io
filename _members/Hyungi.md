@@ -3,6 +3,7 @@ name: Hyungi Cho
 image: images/hyungi.jpg
 role: |
   BS Student
+  <span style="font-size: 0.85em; opacity: 0.7;">Prospective MS</span>
 group: Student
 order: 3
 links:
