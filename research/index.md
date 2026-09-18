@@ -52,7 +52,7 @@ nav:
       <p>Multi- and many-objective optimization for seismic design and retrofit/repair decision support.</p>
     </div>
   </div>
-
+ 
 </div>
 
 </section>
