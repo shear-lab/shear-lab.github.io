@@ -277,11 +277,11 @@ main {
   object-position: center !important;
 }
 
-/* RESEARCH FOCUS: 세로 길이 축소 (원본 4:3 → 16:10 프레임) */
+/* RESEARCH FOCUS: 팀 사진과 같은 4:3 프레임 → 두 그림의 크기·테두리가 정확히 일치 */
 #inside-the-lab .feature-image[aria-label="RESEARCH FOCUS"]{
-  aspect-ratio: 16 / 10 !important;
+  aspect-ratio: 4 / 3 !important;
   height: auto !important;
-  background: #fdfdff;                /* 그림 배경색과 동일 → 좌우 여백이 티 나지 않음 */
+  background: #f8fbfb;                /* 그림 배경색과 동일 */
 }
 
 #inside-the-lab .feature-image[aria-label="RESEARCH FOCUS"] img{
