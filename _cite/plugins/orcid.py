@@ -30,6 +30,44 @@ def main(entry):
 
     response = query(_id)
 
+    # --- 추가: 논문별 상세 정보에서 contributor(공저자) 목록 읽기 ---
+    # ORCID 요약 목록(/works)에는 공저자가 없어서, 상세 정보(/works/{put-codes})를
+    # 최대 100개씩 묶어 한 번에 조회한다.
+    @log_cache
+    @cache.memoize(name=__file__ + ".details", expire=1 * (60 * 60 * 24))
+    def query_details(_id, put_codes):
+        url = endpoint.replace("$ORCID", _id) + "/" + ",".join(put_codes)
+        request = Request(url=url, headers=headers)
+        details = json.loads(urlopen(request).read())
+        return get_safe(details, "bulk", [])
+
+    contributors_by_put_code = {}
+    all_put_codes = [
+        str(get_safe(summary, "put-code", ""))
+        for work in response
+        for summary in get_safe(work, "work-summary", [])
+        if get_safe(summary, "put-code", "")
+    ]
+    try:
+        for start in range(0, len(all_put_codes), 100):
+            chunk = tuple(all_put_codes[start : start + 100])
+            for item in query_details(_id, chunk):
+                work_detail = get_safe(item, "work", {})
+                put_code = str(get_safe(work_detail, "put-code", ""))
+                names = []
+                for contributor in get_safe(work_detail, "contributors.contributor", []) or []:
+                    role = get_safe(contributor, "contributor-attributes.contributor-role", "") or ""
+                    name = (get_safe(contributor, "credit-name.value", "") or "").strip()
+                    # 저자(author)만, 역할 표기가 없으면 저자로 간주
+                    if name and role.lower() in ["", "author"]:
+                        names.append(name)
+                if put_code and names:
+                    contributors_by_put_code[put_code] = names
+    except Exception as e:
+        # 상세 정보 조회에 실패해도 기존 동작(요약 목록 기반)은 그대로 진행
+        log(f"Couldn't get ORCID contributors: {e}", indent=3, level="WARNING")
+    # --- 추가 끝 ---
+
     # list of sources to return
     sources = []
 
@@ -99,6 +137,14 @@ def main(entry):
                 source["date"] = format_date(date)
             if link:
                 source["link"] = link
+
+        # --- 추가: ORCID에 등록된 공저자 목록을 예비용으로 보관 ---
+        for summary in get_safe(work, "work-summary", []):
+            names = contributors_by_put_code.get(str(get_safe(summary, "put-code", "")))
+            if names:
+                source["orcid_authors"] = names
+                break
+        # --- 추가 끝 ---
 
         # copy fields from entry to source
         source.update(entry)
