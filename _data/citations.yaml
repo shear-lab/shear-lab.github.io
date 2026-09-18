@@ -1,5 +1,15 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.12989/SCS.2026.60.4.08
+  title: Seismic performance of low-rise steel moment-resisting  frames with damaged
+    fuse connections and post-earthquake  replacements
+  authors: []
+  publisher: Steel and Composite Structures
+  date: '2026-08-25'
+  link: https://doi.org/hcjssj
+  orcid: 0009-0008-5191-1732
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1016/j.autcon.2026.106977
   title: Automatic monitoring via structure-aware 2D projections from a single point
     cloud using segment anything model (SAM)-based segmentation
