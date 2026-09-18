@@ -7,7 +7,7 @@ title: Home
 
 <section id="inside-the-lab">
 
-{% capture text %}
+{% capture team_text %}
 <div>
   <p>
     Meet our dedicated and passionate team — thoughtful minds united by a shared mission to make the world better!
@@ -26,7 +26,7 @@ title: Home
 </div>
 {% endcapture %}
 
-{% capture text %}
+{% capture research_text %}
 <div style="margin-top: 1rem; text-align: right;">
   <ul class="custom-list" style="margin: 0;">
     <li>Steel & hybrid structural systems</li>
@@ -51,20 +51,18 @@ title: Home
 
 {%
   include feature.html
-  image="images/Overall_research.png"
-  link="research"
-  title="RESEARCH FOCUS"
-  text=text
-%}
-
-
-
-{%
-  include feature.html
   image="images/team_0918.jpg"
   link="team"
   title="TEAM MEMBERS"
-  text=text
+  text=team_text
+%}
+
+{%
+  include feature.html
+  image="images/Overall_research.png"
+  link="research"
+  title="RESEARCH FOCUS"
+  text=research_text
 %}
 
 </section>
