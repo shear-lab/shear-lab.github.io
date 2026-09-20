@@ -52,6 +52,13 @@ jobs:
         run: |
           JEKYLL_ENV=production bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}"
 
+      # GitHub Pages가 gh-pages 브랜치에서 Jekyll을 다시 돌리면
+      # 밑줄로 시작하는 _styles/, _scripts/ 폴더를 통째로 무시해서
+      # CSS와 JS가 404가 된다(=사이트가 스타일 없이 깨져 보임).
+      # .nojekyll 파일을 넣어 재처리를 막는다.
+      - name: Disable Jekyll processing on Pages branch
+        run: touch _site/.nojekyll
+
       - name: Commit live site to Pages branch
         uses: JamesIves/github-pages-deploy-action@v4.5.0
         with:
