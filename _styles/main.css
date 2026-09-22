@@ -294,4 +294,28 @@ main {
   margin-top: 10px; /* 첫 그림 위 여백 (원하는 만큼 조정) */
 }
 
+/* -----------------------------------------
+   메인 화면 상단 배너(헤더)
+   1) 높이 줄이기: 위아래 여백 100px → 40px, 로고 칸 최소높이 90px 해제
+      → 383px → 253px  (더 줄이려면 아래 40px만 낮추면 됨)
+   2) 배경 사진도 함께 축소
+      cover는 폭에 맞춰 확대되므로 배너가 낮아질수록 위아래가 더 잘림.
+      높이를 180%로 지정해 사진을 축소해서 인물 전체가 보이도록 함.
+      (숫자를 낮출수록 더 축소됨: 140% = 더 작게, 100% = 사진 전체)
+      좁은 화면에서는 세로로 늘어나 보이므로 701px 이상에서만 적용.
+   ----------------------------------------- */
+header[data-big] {
+  padding: 40px 20px !important;
+}
+
+header[data-big] .logo {
+  min-height: 0 !important;
+}
+
+@media (min-width: 701px) {
+  header[data-big]:before {
+    background-size: 100% 180% !important;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
