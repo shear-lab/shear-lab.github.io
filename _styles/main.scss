@@ -325,3 +325,18 @@ header[data-big] .logo{
     background-size: 100% 180% !important;
   }
 }
+
+/* -----------------------------------------
+   Research 페이지: 제목과 내용 사이 간격 줄이기
+   원인: h1 아래 여백 40px + <section class="research-overview">의
+         위쪽 안쪽여백 40px + h2 위 여백 40px = 120px
+         (다른 페이지는 섹션이 한 겹뿐이라 40px)
+   → 겹친 여백 두 개를 없애 40px로 맞춤
+   ----------------------------------------- */
+.research-overview{
+  padding-top: 0 !important;
+}
+
+.research-overview > h2:first-child{
+  margin-top: 0 !important;
+}
