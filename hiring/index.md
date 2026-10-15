@@ -7,12 +7,12 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-user-plus" %}Hiring
 
-**[1]  Current open positions (as of 07/16):**
-- Undergraduate (BS): 1
-- Master’s (MS): 1
-- Doctoral/Integrated (PhD): 1
+**[1]  Current open positions (as of 10/15):**
+- Undergraduate (BS): 2
+- Master’s (MS): filled
+- Doctoral/Integrated (PhD): filled
 
-We offer **competitive** salaries and strong research support.
+We offer strong education and research support.
 
 
 **[2]  Preferred skills (not mandatory; training will be provided):**
