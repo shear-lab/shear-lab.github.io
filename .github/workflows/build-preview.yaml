@@ -18,7 +18,9 @@ permissions:
 
 jobs:
   build-preview:
-    runs-on: ubuntu-latest
+    # ubuntu-latest 가 2026-10-19 부터 Ubuntu 26 으로 바뀌면서
+    # bundle install 이 실패함(exit code 5). 되던 환경으로 고정.
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Debug dump
