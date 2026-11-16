@@ -1,0 +1,8 @@
+<li class="pub" data-search="{{ (pub.title + ' ' + (pub.authors or []) | join(' ') + ' ' + (pub.publisher or '')) | clean | lower }}">
+  <div class="pub-year">{{ label }}</div>
+  <div>
+    <div class="pub-title">{% if pub.link %}<a href="{{ pub.link }}">{{ pub.title | clean }}</a>{% else %}{{ pub.title | clean }}{% endif %}</div>
+    {% if pub.authors and showAuthors %}<div class="pub-authors">{% for a in pub.authors %}{% if a == team.pi.name %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}</div>{% endif %}
+    {% if pub.publisher %}<div class="pub-venue">{{ pub.publisher }}</div>{% endif %}
+  </div>
+</li>

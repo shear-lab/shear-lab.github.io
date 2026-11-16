@@ -1,0 +1,16 @@
+---
+layout: page.njk
+title: Publications
+lead: Journal articles from the lab. This list is updated automatically from ORCID.
+permalink: /publications/
+---
+<label class="search"><span>Search publications</span><input type="search" id="pub-search" placeholder="Title, author, or journal"></label>
+<p id="pub-empty" class="muted" hidden>No publications match your search.</p>
+{% for group in citations | byDateDesc | groupByYear %}
+<section class="pub-group">
+  <h2>{{ group.year }}</h2>
+  <ul class="pubs">
+    {% for pub in group.items %}{% set label = "" %}{% set showAuthors = true %}{% include "pub.njk" %}{% endfor %}
+  </ul>
+</section>
+{% endfor %}

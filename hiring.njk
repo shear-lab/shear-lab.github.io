@@ -1,0 +1,25 @@
+---
+layout: page.njk
+title: Hiring
+lead: We welcome motivated students and offer strong education and research support.
+permalink: /hiring/
+---
+<section class="section-plain first">
+  <h2>Open positions</h2>
+  <p class="muted">As of {{ hiring.updated }}</p>
+  <ul class="rows">
+    {% for p in hiring.positions %}
+    <li class="row row-split"><div class="row-title">{{ p.level }}</div><div class="status{% if p.open %} status-open{% endif %}">{{ p.status }}</div></li>
+    {% endfor %}
+  </ul>
+</section>
+<section class="section-plain">
+  <h2>Preferred skills</h2>
+  <p class="muted">Not mandatory. Training will be provided.</p>
+  <ul class="tags">{% for s in hiring.skills %}<li>{{ s }}</li>{% endfor %}</ul>
+</section>
+<section class="section-plain">
+  <h2>How to apply</h2>
+  <p>Send a one-page CV to the PI by email.</p>
+  <p><a class="btn btn-primary" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+</section>

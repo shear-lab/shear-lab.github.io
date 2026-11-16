@@ -1,37 +1,27 @@
-- title: XX
-  subtitle: XX
-  group: featured
-  image: images/photo.jpg
-  # link: https://github.com/
-  description: Coming soon
-  #repo: greenelab/lab-website-template
-  tags:
-    - resource
-
-#- title: Cool Tutorial
-#  subtitle: a subtitle
-#  image: images/photo.jpg
-#  link: https://github.com/
-#  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-#  repo: greenelab/lab-website-template
-#   tags:
-#     - resource
-#     - publication
-
-# - title: Cool Web App
-#   subtitle: a subtitle
-#   image: images/photo.jpg
-#   link: https://github.com/
-#   description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-#   repo: greenelab/lab-website-template
-#   tags:
-#     - software
-
-# - title: Cool Web Server
-#   subtitle: a subtitle
-#   image: images/photo.jpg
-#   link: https://github.com/
-#   description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-#   repo: greenelab/lab-website-template
-#   tags:
-#     - software
+# Funded projects, in the order shown on the page. Add a new project by copying one block.
+# title_ko / sponsor_ko: shown as the main text. title_en / sponsor_en: shown underneath in a lighter color.
+# A project with only an English title can leave out title_ko.
+- period: 2026.05 – 2028.12
+  title_ko: 2026 그린리모델링 인재양성 플랫폼
+  title_en: 2026 Green Remodeling Talent Development Platform
+  sponsor_ko: 국토안전관리원
+  sponsor_en: Korea Authority of Land & Infrastructure Safety (KALIS)
+- period: 2026.03 – 2029.02
+  title_ko: 중력 저항 시스템의 내진 기여도를 반영한 합성 철골 구조물의 디지털 트윈 기반 지진 회복력 향상 시스템 개발
+  title_en: Development of a digital-twin-based seismic resilience enhancement system for composite steel structures considering the seismic contribution of gravity-resisting systems
+  sponsor_ko: 과학기술정보통신부
+  sponsor_en: Ministry of Science and ICT (MSIT)
+- period: 2026.03 – 2028.02
+  title_ko: 창의융합형공학인재양성지원사업
+  title_en: Creative Convergence Engineering Talent Development Program
+  sponsor_ko: 산업통상자원부
+  sponsor_en: Ministry of Trade, Industry and Energy (MOTIE)
+- period: 2025.09 – 2027.08
+  title_en: Seismic performance of low-rise steel moment-resisting frames with damaged fuse connections under successive earthquakes
+  sponsor_ko: 중앙대학교
+  sponsor_en: Chung-Ang University
+- period: 2025.09 – 2030.02
+  title_ko: 순환경제 기반 탄소중립 건축센터 - 탄소중립형 내진 설계 및 유지관리 최적화 기술
+  title_en: "Center for Carbon-Neutral Buildings based on Circular Economy (CCNB): carbon-neutral seismic design and maintenance optimization technologies"
+  sponsor_ko: 과학기술정보통신부
+  sponsor_en: Ministry of Science and ICT (MSIT)

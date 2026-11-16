@@ -1,0 +1,18 @@
+---
+layout: page.njk
+title: Projects
+lead: Funded research projects, past and present.
+permalink: /projects/
+---
+<ul class="rows">
+  {% for p in projects %}
+  <li class="row">
+    <div class="row-when">{{ p.period }}</div>
+    <div>
+      <div class="row-title"{% if p.title_ko %} lang="ko"{% endif %}>{{ p.title_ko or p.title_en }}</div>
+      {% if p.title_ko and p.title_en %}<div class="row-sub">{{ p.title_en }}</div>{% endif %}
+      <div class="row-sponsor">{% if p.sponsor_ko %}<span lang="ko">{{ p.sponsor_ko }}</span>{% endif %}{% if p.sponsor_ko and p.sponsor_en %} · {% endif %}{% if p.sponsor_en %}<span class="row-sub-inline">{{ p.sponsor_en }}</span>{% endif %}</div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>

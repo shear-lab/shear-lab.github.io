@@ -1,0 +1,10 @@
+---
+layout: page.njk
+title: Contact
+permalink: /contact/
+---
+<ul class="rows contact">
+  <li class="row"><div class="row-when">Email</div><div><a href="mailto:{{ site.email }}">{{ site.email }}</a></div></li>
+  <li class="row"><div class="row-when">Phone</div><div><a href="tel:+82-2-820-5210">{{ site.phone }}</a></div></li>
+  <li class="row"><div class="row-when">Address</div><div>{% for line in site.address %}<div>{{ line }}</div>{% endfor %}<p class="map"><a class="btn" href="{{ site.map }}">Open in Google Maps</a></p></div></li>
+</ul>

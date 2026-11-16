@@ -1,0 +1,56 @@
+# Lab members. photo: file name inside the images/ folder.
+# To add a student, copy one block under "students". Move graduates to "alumni".
+# Student photos are in images/team/, cropped 4:5 so every face is the same size.
+pi:
+  name: Sangwook Park
+  role: Assistant Professor
+  photo: Park_profile.jpg
+  email: sangwookpark@cau.ac.kr
+  links:
+    - { label: Google Scholar, url: "https://scholar.google.com/citations?user=iuUI0MQAAAAJ" }
+    - { label: ORCID, url: "https://orcid.org/0009-0008-5191-1732" }
+  education:
+    - { degree: PhD, field: "Civil Engineering, The University of Texas at Austin", when: "US, 2018–2023" }
+    - { degree: MS, field: "Architectural Engineering, Yonsei University", when: "KR, 2014–2016" }
+    - { degree: BS, field: "Architectural Engineering, Yonsei University", when: "KR, 2008–2014" }
+  experience:
+    - { role: "Member, Journal Editorial Committee (42nd term)", where: "Architectural Institute of Korea (AIK)", when: "2026.05–present" }
+    - { role: "Construction Advisory Expert Member", where: "Korea Industrial Complex Corporation (KICOX)", when: "2026.04–present" }
+    - { role: "Member, Design Review Subcommittee (16th term)", where: "Central Construction Technology Review Committee, Ministry of Land, Infrastructure and Transport", when: "2026.03–present" }
+    - { role: "Secretary General, Innovation Center for Engineering Education", where: "Chung-Ang University", when: "2026.03–present" }
+    - { role: "Member, Construction Technology Review Committee", where: "Chungcheongbuk-do Province", when: "2026.02–present" }
+    - { role: "Member, Construction Safety Committee (7th term)", where: "Seoul Housing & Communities Corporation (SH)", when: "2025.11–present" }
+    - { role: "Assistant Professor", where: "Chung-Ang University", when: "KR, 2025.09–present" }
+    - { role: "Research Associate", where: "Wake Forest University", when: "US, 2024–2025" }
+    - { role: "Postdoctoral Researcher", where: "Oklahoma State University", when: "US, 2023–2024" }
+    - { role: "Research Assistant", where: "The University of Texas at Austin", when: "US, 2019–2023" }
+    - { role: "Research Engineer", where: "Yonsei University", when: "KR, 2016–2018" }
+    - { role: "Research Assistant", where: "Yonsei University", when: "KR, 2014–2016" }
+
+students:
+  - name: Gyuri Park
+    role: BS Student
+    note: Prospective MS–PhD Integrated
+    photo: team/gyuri-park.jpg
+    education: "BS, Architectural Engineering, Chung-Ang University (2022–)"
+    email: ally0812@cau.ac.kr
+  - name: Inho Baek
+    role: BS Student
+    note: Prospective MS
+    photo: team/inho-baek.jpg
+    education: "BS, Architectural Engineering, Chung-Ang University (2022–)"
+    email: dlsgh2561@cau.ac.kr
+  - name: Hyungi Cho
+    role: BS Student
+    note: Prospective MS
+    photo: team/hyungi-cho.jpg
+    education: "BS, Architectural Engineering, Chung-Ang University (2024–)"
+    email: hyungi082800@cau.ac.kr
+  - name: Junan CHAI
+    role: BS Student
+    note: Prospective MS
+    photo: team/junan-chai.jpg
+    education: "BS, Architectural Engineering, Chung-Ang University (2022–)"
+    email: junanchai@cau.ac.kr
+
+alumni: []
