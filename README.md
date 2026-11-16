@@ -37,7 +37,6 @@ images:
 | 모집 현황 | `_data/hiring.yaml` |
 | 연구 분야 4개 | `_data/research.yaml` |
 | 홈 화면 문구, 연락처, 메뉴 | `_data/site.yaml` |
-| 심사 중인 논문 | `_data/inprogress.yaml` |
 
 논문 목록(`_data/citations.yaml`)은 ORCID에서 자동으로 가져오므로 직접 고치지 않습니다.
 

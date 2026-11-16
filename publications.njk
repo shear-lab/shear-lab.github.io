@@ -14,20 +14,3 @@ permalink: /publications/
   </ul>
 </section>
 {% endfor %}
-{% if inprogress and inprogress.length %}
-<section class="pub-group">
-  <h2>In progress</h2>
-  <ul class="pubs">
-    {% for pub in inprogress %}{% set label = "" %}{% set showAuthors = true %}
-    <li class="pub" data-search="{{ (pub.title + ' ' + (pub.authors or []) | join(' ')) | clean | lower }}">
-      <div class="pub-year"></div>
-      <div>
-        <div class="pub-title">{{ pub.title | clean }}</div>
-        <div class="pub-authors">{% for a in pub.authors %}{% if a == team.pi.name %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}</div>
-        {% if pub.note %}<div class="pub-venue">{{ pub.note }}</div>{% endif %}
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
-</section>
-{% endif %}

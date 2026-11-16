@@ -4,11 +4,11 @@ title: Research
 lead: We combine large-scale experiments, numerical simulation, and data-driven methods to make structures safer under extreme hazards.
 permalink: /research/
 ---
-<div class="research-list">
+<div class="research-grid">
   {% for area in research %}
-  <article class="research-item">
-    <a href="{{ area.image | img(2000) }}"><img src="{{ area.image | img(1100) }}" alt="Illustration for {{ area.title }}" loading="lazy"></a>
-    <div>
+  <article class="research-card">
+    <a class="research-figure" href="{{ area.image | img(2000) }}" aria-label="Open the full figure for {{ area.title }}"><img src="{{ area.image | img(1100) }}" alt="Illustration for {{ area.title }}" loading="lazy"></a>
+    <div class="research-text">
       <div class="num">0{{ loop.index }}</div>
       <h2>{{ area.title }}</h2>
       <p>{{ area.text }}</p>

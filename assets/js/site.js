@@ -27,3 +27,16 @@ if (search) {
     empty.hidden = shown > 0;
   });
 }
+
+// Team page: show or hide the PI's education and experience
+const piToggle = document.querySelector(".pi-toggle");
+const piProfile = document.getElementById("pi-profile");
+if (piToggle && piProfile) {
+  piToggle.addEventListener("click", () => {
+    const open = piProfile.hidden;
+    piProfile.hidden = !open;
+    piToggle.setAttribute("aria-expanded", String(open));
+    piToggle.querySelector("span").textContent = open ? "\u2212" : "+";
+    if (open) piProfile.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  });
+}
