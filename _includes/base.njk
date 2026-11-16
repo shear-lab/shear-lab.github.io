@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if title %}{{ title }} · {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ description or site.description }}">
+<meta property="og:title" content="{% if title %}{{ title }} · {% endif %}{{ site.title }}">
+<meta property="og:description" content="{{ description or site.description }}">
+<meta property="og:type" content="website">
+{% set og = (images[0] and ('news/' + images[0])) or site.home_photo %}
+<meta property="og:image" content="{{ site.url }}{{ og | img(1200) }}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/images/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label="{{ site.title }} home"><img src="/images/logo.svg" alt="{{ site.title }}" width="78" height="48"></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      {% for item in site.nav %}
+      <a href="{{ item.url }}"{% if page.url == item.url or (item.url != '/' and page.url.startsWith(item.url)) %} aria-current="page"{% endif %}>{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+{{ content | safe }}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-col">
+      <div class="footer-name">{{ site.title }}</div>
+      <div>{{ site.school }}</div>
+      <div>{{ site.university }}, {{ site.location }}</div>
+    </div>
+    <div class="footer-col">
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <div>{{ site.phone }}</div>
+    </div>
+    <div class="footer-links">
+      <a href="{{ site.google_scholar }}">Google Scholar</a>
+      <a href="{{ site.orcid }}">ORCID</a>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

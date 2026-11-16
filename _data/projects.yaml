@@ -1,37 +1,16 @@
-- title: XX
-  subtitle: XX
-  group: featured
-  image: images/photo.jpg
-  # link: https://github.com/
-  description: Coming soon
-  #repo: greenelab/lab-website-template
-  tags:
-    - resource
-
-#- title: Cool Tutorial
-#  subtitle: a subtitle
-#  image: images/photo.jpg
-#  link: https://github.com/
-#  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-#  repo: greenelab/lab-website-template
-#   tags:
-#     - resource
-#     - publication
-
-# - title: Cool Web App
-#   subtitle: a subtitle
-#   image: images/photo.jpg
-#   link: https://github.com/
-#   description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-#   repo: greenelab/lab-website-template
-#   tags:
-#     - software
-
-# - title: Cool Web Server
-#   subtitle: a subtitle
-#   image: images/photo.jpg
-#   link: https://github.com/
-#   description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-#   repo: greenelab/lab-website-template
-#   tags:
-#     - software
+# Funded projects, newest first. Add a new project by copying one block.
+- period: 2026.05 – 2028.12
+  title: 2026 Green Remodeling Talent Development Platform
+  sponsor: Korea Authority of Land & Infrastructure Safety (KALIS)
+- period: 2026.03 – 2029.02
+  title: Development of a digital-twin-based seismic resilience enhancement system for composite steel structures considering the seismic contribution of gravity-resisting systems
+  sponsor: Ministry of Science and ICT (MSIT)
+- period: 2026.03 – 2028.02
+  title: Creative Convergence Engineering Talent Development Program
+  sponsor: Ministry of Trade, Industry and Energy (MOTIE)
+- period: 2025.09 – 2030.02
+  title: "Center for Carbon-Neutral Buildings based on Circular Economy (CCNB): carbon-neutral seismic design and maintenance optimization technologies"
+  sponsor: Ministry of Science and ICT (MSIT)
+- period: 2025.09 – 2027.08
+  title: Seismic performance of low-rise steel moment-resisting frames with damaged fuse connections under successive earthquakes
+  sponsor: Chung-Ang University

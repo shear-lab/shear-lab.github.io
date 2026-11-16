@@ -1,0 +1,6 @@
+<a class="news-card" href="{{ post.url }}">
+  {% set cover = post.data.images[0] and (('news/' + post.data.images[0]) | img(800)) %}
+  {% if cover %}<img src="{{ cover }}" alt="" loading="lazy">{% else %}<div class="news-noimg" aria-hidden="true"></div>{% endif %}
+  <div class="news-date">{{ post.date | longDate }}</div>
+  <h3>{{ post.data.title }}</h3>
+</a>

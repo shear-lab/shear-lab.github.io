@@ -1,0 +1,43 @@
+---
+layout: base.njk
+---
+<section class="wrap hero">
+  <div class="hero-text">
+    <div class="eyebrow">{{ site.university }} · {{ site.location }}<br>{{ site.school }}</div>
+    <h1>{{ site.headline }}</h1>
+    <p class="lead">{{ site.intro }}</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/research/">Explore our research</a>
+      <a class="btn" href="/hiring/">Join the lab</a>
+    </div>
+  </div>
+  <img class="hero-photo" src="{{ site.home_photo | img(1400) }}" alt="{{ site.home_photo_alt }}">
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="section-head"><h2>Research focus</h2><a class="more" href="/research/">All research →</a></div>
+    <div class="grid-4">
+      {% for area in research %}
+      <article class="card">
+        <img src="{{ area.image | img(700) }}" alt="" loading="lazy">
+        <div class="card-body"><h3>{{ area.title }}</h3><p>{{ area.text }}</p></div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="wrap section">
+  <div class="section-head"><h2>Latest news</h2><a class="more" href="/news/">All news →</a></div>
+  <div class="grid-3">
+    {% for post in collections.news | limit(3) %}{% include "news-card.njk" %}{% endfor %}
+  </div>
+</section>
+
+<section class="wrap section section-tight">
+  <div class="section-head"><h2>Recent publications</h2><a class="more" href="/publications/">All publications →</a></div>
+  <ul class="pubs">
+    {% for pub in citations | byDateDesc | limit(3) %}{% set label = pub.date | year %}{% set showAuthors = false %}{% include "pub.njk" %}{% endfor %}
+  </ul>
+</section>

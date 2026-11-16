@@ -1,0 +1,9 @@
+---
+title: "Dr. Park presented his research work at the 2026 EESK conference"
+images:
+  - EESK_2603.jpg
+---
+
+**Dr. Park** gave a presentation at the 2026 Earthquake Engineering Society of Korea (EESK) conference.
+
+- **Sangwook Park**, *"A seismic resilience enhancement strategy for steel moment-resisting frames using replaceable fuse connections under successive earthquakes"*

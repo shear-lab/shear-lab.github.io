@@ -1,0 +1,11 @@
+# Open positions. Change "updated" whenever you edit this file.
+updated: October 15, 2026
+positions:
+  - { level: "Undergraduate (BS)", status: "2 open", open: true }
+  - { level: "Master's (MS)", status: "Filled", open: false }
+  - { level: "Doctoral / Integrated (PhD)", status: "Filled", open: false }
+skills:
+  - Machine learning
+  - Python / MATLAB
+  - OpenSees / Abaqus
+  - Experimental instrumentation and data acquisition

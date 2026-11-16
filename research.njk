@@ -1,0 +1,19 @@
+---
+layout: page.njk
+title: Research
+lead: We combine large-scale experiments, numerical simulation, and data-driven methods to make structures safer under extreme hazards.
+permalink: /research/
+---
+<div class="research-list">
+  {% for area in research %}
+  <article class="research-item">
+    <a href="{{ area.image | img(2000) }}"><img src="{{ area.image | img(1100) }}" alt="Illustration for {{ area.title }}" loading="lazy"></a>
+    <div>
+      <div class="num">0{{ loop.index }}</div>
+      <h2>{{ area.title }}</h2>
+      <p>{{ area.text }}</p>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+<p class="after"><a class="btn btn-primary" href="/publications/">See our publications</a></p>

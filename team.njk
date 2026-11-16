@@ -1,0 +1,55 @@
+---
+layout: page.njk
+title: Team
+lead: We aim to contribute to a safer, more resilient world through research and innovation in extreme hazard mitigation.
+permalink: /team/
+---
+{% set pi = team.pi %}
+<section class="pi">
+  <img src="{{ pi.photo | img(900) }}" alt="{{ pi.name }}">
+  <div>
+    <div class="eyebrow">Principal investigator</div>
+    <h2>{{ pi.name }}</h2>
+    <p class="pi-role">{{ pi.role }}, {{ site.university }}</p>
+    <p class="pi-links"><a href="mailto:{{ pi.email }}">{{ pi.email }}</a>{% for l in pi.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}</p>
+    <h3>Education</h3>
+    <ul class="cv">
+      {% for e in pi.education %}<li><span><strong>{{ e.degree }}</strong>, {{ e.field }}</span><span class="muted">{{ e.when }}</span></li>{% endfor %}
+    </ul>
+    <h3>Professional experience</h3>
+    <ul class="cv">
+      {% for e in pi.experience %}<li><span><strong>{{ e.role }}</strong>, {{ e.where }}</span><span class="muted">{{ e.when }}</span></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section-plain">
+  <h2>Students</h2>
+  <div class="people">
+    {% for m in team.students %}
+    <article class="person">
+      <img src="{{ m.photo | img(600) }}" alt="{{ m.name }}" loading="lazy">
+      <h3>{{ m.name }}</h3>
+      <div class="person-role">{{ m.role }}{% if m.note %}<span> · {{ m.note }}</span>{% endif %}</div>
+      {% if m.education %}<div class="muted small">{{ m.education }}</div>{% endif %}
+      {% if m.email %}<a class="small" href="mailto:{{ m.email }}">{{ m.email }}</a>{% endif %}
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+{% if team.alumni and team.alumni.length %}
+<section class="section-plain">
+  <h2>Alumni</h2>
+  <div class="people">
+    {% for m in team.alumni %}
+    <article class="person">
+      {% if m.photo %}<img src="{{ m.photo | img(600) }}" alt="{{ m.name }}" loading="lazy">{% endif %}
+      <h3>{{ m.name }}</h3>
+      <div class="person-role">{{ m.role }}{% if m.note %}<span> · {{ m.note }}</span>{% endif %}</div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+<p class="after"><a class="btn" href="/hiring/">Join the lab</a></p>

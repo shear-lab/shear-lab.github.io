@@ -1,0 +1,14 @@
+---
+layout: page.njk
+title: News
+lead: What the lab has been up to.
+permalink: /news/
+---
+{% for group in collections.news | groupByYear %}
+<section class="news-year">
+  <h2>{{ group.year }}</h2>
+  <div class="grid-3">
+    {% for post in group.items %}{% include "news-card.njk" %}{% endfor %}
+  </div>
+</section>
+{% endfor %}

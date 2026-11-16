@@ -1,0 +1,37 @@
+# Basic information shown across the whole site.
+title: SHEAR Lab
+url: https://shear-lab.github.io
+full_name: Structures, Hazards, Evaluation, And Resilience
+description: SHEAR Lab develops advanced technologies to enhance structural resilience under extreme hazards.
+university: Chung-Ang University
+school: School of Architecture & Building Science
+location: Seoul, Korea
+
+# Home page
+headline: Structural resilience under extreme hazards
+intro: >-
+  SHEAR Lab (Structures, Hazards, Evaluation, And Resilience) develops advanced
+  technologies to enhance structural resilience under extreme hazards, contributing
+  to a safer, more resilient world through research and innovation in hazard mitigation.
+home_photo: team_0918.jpg
+home_photo_alt: SHEAR Lab members on campus
+
+# Contact
+email: sangwookpark@cau.ac.kr
+phone: 02-820-5210
+address:
+  - Chung-Ang University Business Incubator Center (Bldg. 209)
+  - 84 Heukseok-ro, Dongjak-gu, Seoul 06974, Korea
+map: https://www.google.com/maps/place/Chung-Ang+University+Business+Incubator+Center(209)/data=!4m14!1m7!3m6!1s0x357ca1d4c4d3b2af:0x14688d372d751b73!2sChung-Ang+University+Business+Incubator+Center(209)!8m2!3d37.5032511!4d126.9580358!16s%2Fg%2F11st4hx_8y!3m5!1s0x357ca1d4c4d3b2af:0x14688d372d751b73!8m2!3d37.5032511!4d126.9580358!16s%2Fg%2F11st4hx_8y
+google_scholar: https://scholar.google.com/citations?user=iuUI0MQAAAAJ
+orcid: https://orcid.org/0009-0008-5191-1732
+
+# Top menu, in order
+nav:
+  - { title: Research, url: /research/ }
+  - { title: Publications, url: /publications/ }
+  - { title: Projects, url: /projects/ }
+  - { title: Team, url: /team/ }
+  - { title: News, url: /news/ }
+  - { title: Hiring, url: /hiring/ }
+  - { title: Contact, url: /contact/ }
