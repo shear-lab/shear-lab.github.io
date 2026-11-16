@@ -1,1 +1,0 @@
-{"version":3,"sourceRoot":"","sources":["image.scss"],"names":[],"mappings":";AAAA;EACE;EACA;EACA","sourcesContent":["img {\n  max-width: 100%;\n  height: auto;         /* 비율 유지 */\n  display: block;\n}\n"],"file":"image.css"}
