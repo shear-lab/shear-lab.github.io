@@ -32,11 +32,13 @@ images:
 
 | 고칠 내용 | 파일 |
 |---|---|
-| 구성원 (추가, 졸업생 이동, 교수 경력) | `_data/team.yaml` (사진은 `images/`) |
+| 구성원 (추가, 졸업생 이동, 교수 경력) | `_data/team.yaml` (사진은 `images/team/`) |
 | 과제 목록 | `_data/projects.yaml` |
 | 모집 현황 | `_data/hiring.yaml` |
 | 연구 분야 4개 | `_data/research.yaml` |
 | 홈 화면 문구, 연락처, 메뉴 | `_data/site.yaml` |
+
+학생 사진은 얼굴 크기가 같아 보이도록 세로 4:5 비율(머리 위 여백 조금, 어깨선까지)로 잘라 `images/team/`에 넣습니다.
 
 논문 목록(`_data/citations.yaml`)은 ORCID에서 자동으로 가져오므로 직접 고치지 않습니다.
 

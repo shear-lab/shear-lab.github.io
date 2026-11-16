@@ -1,5 +1,6 @@
 # Lab members. photo: file name inside the images/ folder.
 # To add a student, copy one block under "students". Move graduates to "alumni".
+# Student photos are in images/team/, cropped 4:5 so every face is the same size.
 pi:
   name: Sangwook Park
   role: Assistant Professor
@@ -30,25 +31,25 @@ students:
   - name: Gyuri Park
     role: BS Student
     note: Prospective MS–PhD Integrated
-    photo: gp.png
+    photo: team/gyuri-park.jpg
     education: "BS, Architectural Engineering, Chung-Ang University (2022–)"
     email: ally0812@cau.ac.kr
   - name: Inho Baek
     role: BS Student
     note: Prospective MS
-    photo: inho.png
+    photo: team/inho-baek.jpg
     education: "BS, Architectural Engineering, Chung-Ang University (2022–)"
     email: dlsgh2561@cau.ac.kr
   - name: Hyungi Cho
     role: BS Student
     note: Prospective MS
-    photo: hyungi.jpg
+    photo: team/hyungi-cho.jpg
     education: "BS, Architectural Engineering, Chung-Ang University (2024–)"
     email: hyungi082800@cau.ac.kr
   - name: Junan CHAI
     role: BS Student
     note: Prospective MS
-    photo: Junan.png
+    photo: team/junan-chai.jpg
     education: "BS, Architectural Engineering, Chung-Ang University (2022–)"
     email: junanchai@cau.ac.kr
 
