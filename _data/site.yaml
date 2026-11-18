@@ -26,6 +26,8 @@ map: https://www.google.com/maps/place/Chung-Ang+University+Business+Incubator+C
 google_scholar: https://scholar.google.com/citations?user=iuUI0MQAAAAJ
 orcid: https://orcid.org/0009-0008-5191-1732
 
+# Logo files are in images/logo/. The browser tab icon is images/icon.png.
+
 # Top menu, in order
 nav:
   - { title: Research, url: /research/ }
