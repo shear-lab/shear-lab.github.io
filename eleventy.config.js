@@ -32,6 +32,10 @@ export default function (cfg) {
   cfg.addPassthroughCopy({ "images/logo": "images/logo", "images/research": "images/research", "images/favicon-navy.png": "images/favicon-navy.png" });
   cfg.addWatchTarget("images");
 
+  // A new number on every build, added to the CSS and JS addresses so that
+  // browsers load the new files right after an update instead of a saved copy.
+  cfg.addGlobalData("buildId", () => Date.now().toString(36));
+
   // Every photo used on the site is resized and compressed at build time,
   // so original camera files can be uploaded as they are.
   const wanted = new Map();
