@@ -29,7 +29,7 @@ export default function (cfg) {
   cfg.addPlugin(EleventyHtmlBasePlugin);
   cfg.addDataExtension("yaml,yml", (text) => yaml.load(text));
   cfg.addPassthroughCopy("assets");
-  cfg.addPassthroughCopy({ "images/logo": "images/logo", "images/favicon-navy.png": "images/favicon-navy.png" });
+  cfg.addPassthroughCopy({ "images/logo": "images/logo", "images/research": "images/research", "images/favicon-navy.png": "images/favicon-navy.png" });
   cfg.addWatchTarget("images");
 
   // Every photo used on the site is resized and compressed at build time,
