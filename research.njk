@@ -7,7 +7,7 @@ permalink: /research/
 <div class="research-grid">
   {% for area in research %}
   <article class="research-card">
-    <a class="research-figure" href="{{ area.image | img(2000) }}" aria-label="Open the full figure for {{ area.title }}"><img src="{{ area.image | img(1100) }}" alt="Illustration for {{ area.title }}" loading="lazy"></a>
+    <a class="research-figure" href="{{ area.image | img(2000) }}" data-zoom aria-label="Open the full figure for {{ area.title }}"><img src="{{ area.image | img(1100) }}" alt="Illustration for {{ area.title }}" loading="lazy"></a>
     <div class="research-text">
       <div class="num">0{{ loop.index }}</div>
       <h2>{{ area.title }}</h2>
