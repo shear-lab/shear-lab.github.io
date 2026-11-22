@@ -9,7 +9,7 @@ layout: base.njk
   {% if images and images.length %}
   <div class="gallery gallery-{{ images.length if images.length < 4 else 'many' }}">
     {% for name in images %}{% set small = ('news/' + name) | img(1000) %}{% if small %}
-    <a href="{{ ('news/' + name) | img(2000) }}"><img src="{{ small }}" alt="{{ title }}, photo {{ loop.index }}" loading="lazy"></a>
+    <a href="{{ ('news/' + name) | img(2000) }}" data-zoom><img src="{{ small }}" alt="{{ title }}, photo {{ loop.index }}" loading="lazy"></a>
     {% endif %}{% endfor %}
   </div>
   {% endif %}
