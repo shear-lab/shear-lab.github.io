@@ -1,19 +1,14 @@
 # Research areas shown on the home page and the Research page.
-# image: full figure shown on the Research page (file name inside the images/ folder).
-# thumb: simple picture shown on the home page card. If left out, the full figure is used.
+# image: file name inside the images/ folder.
 - title: Steel & hybrid structural systems
   text: Composite and hybrid (steel, timber, concrete) components, seismic performance, carbon-neutral design.
   image: No1.png
-  thumb: research/steel-hybrid.jpg
 - title: Large-scale experimental testing
   text: Component- and system-level testing for seismic performance evaluation and model validation.
   image: No2.png
-  thumb: research/testing.jpg
 - title: Vision- and AI-driven structural health monitoring
   text: LiDAR, computer vision, and foundation-model-based monitoring for digital twin applications.
   image: No3.png
-  thumb: research/monitoring.jpg
 - title: MOEA optimization & decision-making
   text: Multi- and many-objective optimization for seismic design and retrofit/repair decision support.
   image: No4.png
-  thumb: research/optimization.jpg
